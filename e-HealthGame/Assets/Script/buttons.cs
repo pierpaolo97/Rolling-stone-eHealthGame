@@ -8,6 +8,7 @@ public class buttons : MonoBehaviour
 {
     public GameObject impostazioni;
     public GameObject gameover;
+    public GameObject carta;
 
     public void playAgain()
     {
@@ -17,12 +18,14 @@ public class buttons : MonoBehaviour
 
     public void settings()
     {
+        carta.SetActive(false);
         gameover.SetActive(false);
         impostazioni.SetActive(true);
     }
 
     public void back()
     {
+        carta.SetActive(false);
         gameover.SetActive(true);
         impostazioni.SetActive(false);
     }

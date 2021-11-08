@@ -19,9 +19,13 @@ public class setQuestion : MonoBehaviour
     private Renderer rend;
     private TextMeshPro textParola;
     public GameObject risposte;
+    public GameObject carta;
 
     private TextMeshPro r1;
     private TextMeshPro r2;
+    private Text textCarta;
+    private RawImage photoCarta;
+
     public GameObject audioObject;
     public AudioSource audioSource;
     public Texture2D audioTexture;
@@ -30,6 +34,8 @@ public class setQuestion : MonoBehaviour
     {
         rend = domanda.transform.Find("Immagine").GetComponent<MeshRenderer>();
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();
+        textCarta = carta.transform.Find("TextImg").GetComponent<Text>();
+        photoCarta = carta.transform.Find("PhotoImg").GetComponent<RawImage>();
 
         r1 = risposte.transform.Find("R1").transform.Find("textR1").GetComponent<TextMeshPro>();
         r2 = risposte.transform.Find("R2").transform.Find("textR2").GetComponent<TextMeshPro>();
@@ -87,8 +93,11 @@ public class setQuestion : MonoBehaviour
                 Debug.LogWarning("Easy");
                 if (p >= 10)
                 {
+                    carta.SetActive(true);
                     rend.material.mainTexture = currentQuestion.texture;
                     textParola.text = currentQuestion.word;
+                    textCarta.text = currentQuestion.word;
+                    photoCarta.texture = currentQuestion.texture;
                 }
                 else
                 {
@@ -103,8 +112,11 @@ public class setQuestion : MonoBehaviour
                 Debug.LogWarning("Medium");
                 if (p >= 30)
                 {
+                    carta.SetActive(true);
                     rend.material.mainTexture = currentQuestion.texture;
                     textParola.text = currentQuestion.word;
+                    textCarta.text = currentQuestion.word;
+                    photoCarta.texture = currentQuestion.texture;
                 }
                 else
                 {
@@ -119,8 +131,11 @@ public class setQuestion : MonoBehaviour
                 Debug.LogWarning("Hard");
                 if (p >= 50)
                 {
+                    carta.SetActive(true);
                     rend.material.mainTexture = currentQuestion.texture;
                     textParola.text = currentQuestion.word;
+                    textCarta.text = currentQuestion.word;
+                    photoCarta.texture = currentQuestion.texture;
                 }
                 else
                 {
