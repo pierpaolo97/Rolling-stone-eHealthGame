@@ -1,0 +1,6 @@
+Playerprefs:
+
+scoreLevel: punteggio dei vari livelli.
+Level: a che domanda del livello sei arrivato (fino a 10 max)
+difficolta: può essere "Easy", "Medium", "Hard"
+LetteraLivello: può essere "C" o "S"
