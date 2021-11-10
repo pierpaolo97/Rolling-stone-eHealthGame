@@ -17,10 +17,15 @@ public class detectCollision : MonoBehaviour
     public int tocco = 0;
     public Text timeText;
     public float timeStart = 0;
-    public int scoreValue=0;
+    public int scoreValue = 0;
     public GameObject menuLevel;
     public Text menuScoreText;
     public Text menuLevelText;
+    public GameObject carta;
+    public GameObject cartasonoro;
+    public GameObject right;
+    public GameObject wrong;
+
     private Vector3 savePosCollision;
 
 
@@ -35,7 +40,7 @@ public class detectCollision : MonoBehaviour
         savePosCollision = collision.transform.position;
         if (collision.transform.name == "Plane" && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
-            tocco = 1;  
+            tocco = 1;
             this.GetComponent<Accelerometer>().speed = 20f;
             this.GetComponent<fromKeyboard>().speed = 20f;
 
@@ -43,6 +48,7 @@ public class detectCollision : MonoBehaviour
 
         if (collision.transform.CompareTag("True"))
         {
+            right.SetActive(true);
             this.transform.position = collision.transform.position;
             this.GetComponent<Rigidbody>().velocity = Vector3.zero;
             this.GetComponent<SphereCollider>().enabled = false;
@@ -56,15 +62,16 @@ public class detectCollision : MonoBehaviour
 
         if (collision.transform.CompareTag("False"))
         {
+            wrong.SetActive(true);
             this.transform.position = collision.transform.position;
-            this.GetComponent<Accelerometer>().speed = 0f;            
+            this.GetComponent<Accelerometer>().speed = 0f;
             Debug.Log("Hai sbagliato");
             checkLevel();
         }
 
     }
 
-    
+
     IEnumerator TransitionToNextQuestion()
     {
         PlayerPrefs.SetInt("scoreLevel", scoreValue);
@@ -77,7 +84,7 @@ public class detectCollision : MonoBehaviour
         if (tocco > 0)
         {
             timeStart += Time.deltaTime;
-            timeText.text = "Time: " + Mathf.Round(timeStart).ToString();
+            timeText.text =  Mathf.Round(timeStart).ToString();
         }
     }
 
@@ -89,8 +96,13 @@ public class detectCollision : MonoBehaviour
 
         if (level == 2)
         {
+
+            carta.SetActive(false);
+            cartasonoro.SetActive(false);
+            right.SetActive(false);
+            wrong.SetActive(false);
             menuLevel.SetActive(true);
-            menuLevelText.text = "LEVEL '" + PlayerPrefs.GetString("LetteraLivello", "C") + "' COMPLETED"; 
+            menuLevelText.text = "LEVEL '" + PlayerPrefs.GetString("LetteraLivello", "C") + "' COMPLETED";
             menuScoreText.text = "SCORE: " + scoreValue.ToString() + "/10";
             this.GetComponent<Score>().scoreText.gameObject.SetActive(false);
             timeText.gameObject.SetActive(false);
@@ -99,7 +111,7 @@ public class detectCollision : MonoBehaviour
         {
             StartCoroutine(TransitionToNextQuestion());
         }
-        
+
 
     }
 

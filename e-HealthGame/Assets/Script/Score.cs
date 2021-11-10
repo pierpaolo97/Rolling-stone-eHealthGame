@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
     void Awake()
     {
         score = PlayerPrefs.GetInt("scoreLevel", 0);
-        scoreText.text = "Score:" + score.ToString();
+        scoreText.text = score.ToString();
     }
 
 }

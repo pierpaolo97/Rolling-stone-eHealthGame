@@ -20,6 +20,7 @@ public class setQuestion : MonoBehaviour
     private TextMeshPro textParola;
     public GameObject risposte;
     public GameObject carta;
+    public GameObject cartasonoro;
 
     private TextMeshPro r1;
     private TextMeshPro r2;
@@ -40,7 +41,7 @@ public class setQuestion : MonoBehaviour
         r1 = risposte.transform.Find("R1").transform.Find("textR1").GetComponent<TextMeshPro>();
         r2 = risposte.transform.Find("R2").transform.Find("textR2").GetComponent<TextMeshPro>();
 
-        if (unansweredQuestions == null || unansweredQuestions.Count==0)
+        if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
             switch (PlayerPrefs.GetString("LetteraLivello", "C"))
             {
@@ -53,7 +54,7 @@ public class setQuestion : MonoBehaviour
             }
         }
 
-        SetCurrentQuestion();            
+        SetCurrentQuestion();
     }
 
     void SetCurrentQuestion()
@@ -61,7 +62,7 @@ public class setQuestion : MonoBehaviour
         int x = Random.Range(0, unansweredQuestions.Count);
         currentQuestion = unansweredQuestions[x];
         unansweredQuestions.RemoveAt(x);
-        
+
         int y = Random.Range(0, 2);
         switch (y)
         {
@@ -101,6 +102,7 @@ public class setQuestion : MonoBehaviour
                 }
                 else
                 {
+                    cartasonoro.SetActive(true);
                     rend.material.mainTexture = audioTexture;
                     textParola.text = "";
                     audioObject.SetActive(true);
@@ -120,6 +122,7 @@ public class setQuestion : MonoBehaviour
                 }
                 else
                 {
+                    cartasonoro.SetActive(true);
                     rend.material.mainTexture = audioTexture;
                     textParola.text = "";
                     audioObject.SetActive(true);
@@ -139,6 +142,8 @@ public class setQuestion : MonoBehaviour
                 }
                 else
                 {
+
+                    cartasonoro.SetActive(true);
                     rend.material.mainTexture = audioTexture;
                     textParola.text = "";
                     audioObject.SetActive(true);
@@ -151,7 +156,7 @@ public class setQuestion : MonoBehaviour
     IEnumerator playAudio()
     {
         yield return new WaitForSeconds(1f);
-        audioSource.PlayOneShot(currentQuestion.audioWord);      
+        audioSource.PlayOneShot(currentQuestion.audioWord);
     }
 
 
