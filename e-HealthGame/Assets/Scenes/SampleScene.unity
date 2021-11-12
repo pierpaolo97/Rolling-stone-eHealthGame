@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465767, g: 0.49641162, b: 0.57481784, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4715,13 +4715,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606897567770194958, guid: b0050b2322d944881b43fe808bcb6964, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096136447853574572, guid: b0050b2322d944881b43fe808bcb6964, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7535660163802395563, guid: b0050b2322d944881b43fe808bcb6964, type: 3}
       propertyPath: m_Name
       value: Carta
       objectReference: {fileID: 0}
     - target: {fileID: 7535660163802395563, guid: b0050b2322d944881b43fe808bcb6964, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8887033728320347488, guid: b0050b2322d944881b43fe808bcb6964, type: 3}
       propertyPath: m_AnchoredPosition.x
