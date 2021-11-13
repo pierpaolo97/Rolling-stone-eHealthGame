@@ -9,6 +9,7 @@ public class buttons : MonoBehaviour
     public GameObject impostazioni;
     public GameObject gameover;
     public GameObject carta;
+    public GameObject menuLevel;
 
     public void playAgain()
     {
@@ -28,23 +29,42 @@ public class buttons : MonoBehaviour
         carta.SetActive(false);
         gameover.SetActive(true);
         impostazioni.SetActive(false);
+        menuLevel.SetActive(false);
     }
 
     public void changeLevel()
     {
-        switch (PlayerPrefs.GetString("LetteraLivello", "C"))
+
+        menuLevel.SetActive(true);
+        /*switch (PlayerPrefs.GetString("LetteraLivello", "C"))
         {
             case "C":
-                PlayerPrefs.SetString("LetteraLivello", "S");
+                PlayerPrefs.SetString("LetteraLivello", "G");
                 break;
-            case "S":
+            case "G":
                 PlayerPrefs.SetString("LetteraLivello", "C");
                 break;
         }
         
-        StartCoroutine(caricaScena());
+        StartCoroutine(caricaScena());*/
     }
 
+    public void levelC()
+    {
+        PlayerPrefs.SetString("LetteraLivello", "C");
+    }
+
+    public void levelG()
+    {
+        PlayerPrefs.SetString("LetteraLivello", "G");
+    }
+
+    public void levelSC()
+    {
+        PlayerPrefs.SetString("LetteraLivello", "SC");
+    }
+
+    
     public void easy()
     {
         PlayerPrefs.SetString("difficolta", "Easy");

@@ -14,9 +14,11 @@ public class Accelerometer : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Vector3 acc = Input.acceleration;
         rigid.AddForce(acc.x * speed, 0, acc.y * speed);
     }
+
+   
 }

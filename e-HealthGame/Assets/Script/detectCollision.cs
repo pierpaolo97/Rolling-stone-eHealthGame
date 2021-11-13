@@ -26,6 +26,9 @@ public class detectCollision : MonoBehaviour
     public GameObject right;
     public GameObject wrong;
 
+    public GameObject scoreObject;
+    public GameObject timeObject;
+
     private Vector3 savePosCollision;
 
 
@@ -38,34 +41,23 @@ public class detectCollision : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         savePosCollision = collision.transform.position;
-        if (collision.transform.name == "Plane" && tocco == 0) //serve per il primo tocco della pallina sul piano 
+        if ( (collision.transform.name == "Plane" || collision.transform.name == "DOMANDA") && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
+            Debug.Log("Toccato");
             tocco = 1;
             this.GetComponent<Accelerometer>().speed = 20f;
             this.GetComponent<fromKeyboard>().speed = 20f;
-
         }
 
         if (collision.transform.CompareTag("True"))
         {
-            right.SetActive(true);
-            this.transform.position = collision.transform.position;
-            this.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            this.GetComponent<SphereCollider>().enabled = false;
-            scoreValue += 1;
-            this.GetComponent<Score>().scoreText.text = "Score:" + scoreValue.ToString();
-            this.GetComponent<Accelerometer>().speed = 0f;
-            Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
-            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            rispostaEsatta(collision);    
             checkLevel();
         }
 
         if (collision.transform.CompareTag("False"))
         {
-            wrong.SetActive(true);
-            this.transform.position = collision.transform.position;
-            this.GetComponent<Accelerometer>().speed = 0f;
-            Debug.Log("Hai sbagliato");
+            rispostaSbagliata(collision);
             checkLevel();
         }
 
@@ -96,24 +88,57 @@ public class detectCollision : MonoBehaviour
 
         if (level == 2)
         {
-
-            carta.SetActive(false);
-            cartasonoro.SetActive(false);
-            right.SetActive(false);
-            wrong.SetActive(false);
-            menuLevel.SetActive(true);
-            menuLevelText.text = "LEVEL '" + PlayerPrefs.GetString("LetteraLivello", "C") + "' COMPLETED";
-            menuScoreText.text = "SCORE: " + scoreValue.ToString() + "/10";
-            this.GetComponent<Score>().scoreText.gameObject.SetActive(false);
-            timeText.gameObject.SetActive(false);
+            fineLivello();
+            StartCoroutine(attendiAnimazione());               
         }
         else
         {
             StartCoroutine(TransitionToNextQuestion());
         }
-
-
     }
+
+
+    private void rispostaEsatta(Collision collision)
+    {
+        Debug.Log(timeStart);
+        right.SetActive(true);
+        this.transform.position = collision.transform.position;
+        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        this.GetComponent<SphereCollider>().enabled = false;
+        scoreValue += Mathf.RoundToInt(10 * 5 / timeStart);
+        this.GetComponent<Score>().scoreText.text = scoreValue.ToString();
+        this.GetComponent<Accelerometer>().speed = 0f;
+        Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
+        this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+    }
+
+    private void rispostaSbagliata(Collision collision)
+    {
+        wrong.SetActive(true);
+        this.transform.position = collision.transform.position;
+        this.GetComponent<Accelerometer>().speed = 0f;
+    }
+
+    private void fineLivello()
+    {     
+        menuLevel.SetActive(true);
+        menuLevelText.text = PlayerPrefs.GetString("LetteraLivello", "C");
+        menuScoreText.text = "SCORE: " + scoreValue.ToString();   
+    }
+
+
+    IEnumerator attendiAnimazione()
+    {
+        yield return new WaitForSeconds(0.5f);
+        menuLevel.GetComponent<Animator>().Play("bounce 0");
+        carta.SetActive(false);
+        cartasonoro.SetActive(false);
+        right.SetActive(false);
+        wrong.SetActive(false);
+        scoreObject.SetActive(false);
+        timeObject.SetActive(false);
+    }
+
 
 
 

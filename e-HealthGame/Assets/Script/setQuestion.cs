@@ -11,7 +11,8 @@ using UnityEngine.SceneManagement;
 public class setQuestion : MonoBehaviour
 {
     public Question[] questionsC;
-    public Question[] questionsS;
+    public Question[] questionsG;
+    public Question[] questionsSC;
     private static List<Question> unansweredQuestions;
     private Question currentQuestion;
     public GameObject domanda;
@@ -33,6 +34,7 @@ public class setQuestion : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(PlayerPrefs.GetString("LetteraLivello"));
         rend = domanda.transform.Find("Immagine").GetComponent<MeshRenderer>();
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();
         textCarta = carta.transform.Find("TextImg").GetComponent<Text>();
@@ -48,8 +50,11 @@ public class setQuestion : MonoBehaviour
                 case "C":
                     unansweredQuestions = questionsC.ToList<Question>();
                     break;
-                case "S":
-                    unansweredQuestions = questionsS.ToList<Question>();
+                case "G":
+                    unansweredQuestions = questionsG.ToList<Question>();
+                    break;
+                case "SC":
+                    unansweredQuestions = questionsSC.ToList<Question>();
                     break;
             }
         }
@@ -94,19 +99,11 @@ public class setQuestion : MonoBehaviour
                 Debug.LogWarning("Easy");
                 if (p >= 10)
                 {
-                    carta.SetActive(true);
-                    rend.material.mainTexture = currentQuestion.texture;
-                    textParola.text = currentQuestion.word;
-                    textCarta.text = currentQuestion.word;
-                    photoCarta.texture = currentQuestion.texture;
+                    parola();
                 }
                 else
                 {
-                    cartasonoro.SetActive(true);
-                    rend.material.mainTexture = audioTexture;
-                    textParola.text = "";
-                    audioObject.SetActive(true);
-                    StartCoroutine(playAudio());
+                    audioParola();
                 }
                 break;
 
@@ -114,19 +111,11 @@ public class setQuestion : MonoBehaviour
                 Debug.LogWarning("Medium");
                 if (p >= 30)
                 {
-                    carta.SetActive(true);
-                    rend.material.mainTexture = currentQuestion.texture;
-                    textParola.text = currentQuestion.word;
-                    textCarta.text = currentQuestion.word;
-                    photoCarta.texture = currentQuestion.texture;
+                    parola();
                 }
                 else
                 {
-                    cartasonoro.SetActive(true);
-                    rend.material.mainTexture = audioTexture;
-                    textParola.text = "";
-                    audioObject.SetActive(true);
-                    StartCoroutine(playAudio());
+                    audioParola();
                 }
                 break;
 
@@ -134,20 +123,11 @@ public class setQuestion : MonoBehaviour
                 Debug.LogWarning("Hard");
                 if (p >= 50)
                 {
-                    carta.SetActive(true);
-                    rend.material.mainTexture = currentQuestion.texture;
-                    textParola.text = currentQuestion.word;
-                    textCarta.text = currentQuestion.word;
-                    photoCarta.texture = currentQuestion.texture;
+                    parola();
                 }
                 else
                 {
-
-                    cartasonoro.SetActive(true);
-                    rend.material.mainTexture = audioTexture;
-                    textParola.text = "";
-                    audioObject.SetActive(true);
-                    StartCoroutine(playAudio());
+                    audioParola();
                 }
                 break;
         }
@@ -157,6 +137,24 @@ public class setQuestion : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         audioSource.PlayOneShot(currentQuestion.audioWord);
+    }
+
+    private void parola()
+    {
+        carta.SetActive(true);
+        rend.material.mainTexture = currentQuestion.texture;
+        textParola.text = currentQuestion.word;
+        textCarta.text = currentQuestion.word;
+        photoCarta.texture = currentQuestion.texture;
+    }
+
+    private void audioParola()
+    {
+        cartasonoro.SetActive(true);
+        rend.material.mainTexture = audioTexture;
+        textParola.text = "";
+        audioObject.SetActive(true);
+        StartCoroutine(playAudio());
     }
 
 
