@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Xml;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class detectCollision : MonoBehaviour
 {
@@ -25,12 +28,14 @@ public class detectCollision : MonoBehaviour
     public GameObject cartasonoro;
     public GameObject right;
     public GameObject wrong;
+    public int scoreAnswer = 0;
 
     public GameObject scoreObject;
     public GameObject timeObject;
 
     private Vector3 savePosCollision;
-
+    public GameObject camera;
+    public string rispostaData;
 
     private void Start()
     {
@@ -50,20 +55,21 @@ public class detectCollision : MonoBehaviour
         }
 
         if (collision.transform.CompareTag("True"))
-        {
-            rispostaEsatta(collision);    
+        {          
+            rispostaEsatta(collision);
+            prelevaInformazioni(collision, "CORRECT");
             checkLevel();
         }
 
         if (collision.transform.CompareTag("False"))
-        {
+        {            
             rispostaSbagliata(collision);
+            prelevaInformazioni(collision, "WRONG");
             checkLevel();
         }
-
     }
 
-
+  
     IEnumerator TransitionToNextQuestion()
     {
         PlayerPrefs.SetInt("scoreLevel", scoreValue);
@@ -105,7 +111,8 @@ public class detectCollision : MonoBehaviour
         this.transform.position = collision.transform.position;
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
         this.GetComponent<SphereCollider>().enabled = false;
-        scoreValue += Mathf.RoundToInt(10 * 5 / timeStart);
+        scoreAnswer = Mathf.RoundToInt(10 * 5 / timeStart);
+        scoreValue += scoreAnswer;
         this.GetComponent<Score>().scoreText.text = scoreValue.ToString();
         this.GetComponent<Accelerometer>().speed = 0f;
         Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
@@ -138,6 +145,55 @@ public class detectCollision : MonoBehaviour
         scoreObject.SetActive(false);
         timeObject.SetActive(false);
     }
+
+
+    public void prelevaInformazioni(Collision collision, string esito)
+    {
+
+        GameObject father = collision.gameObject.transform.parent.gameObject;
+        if (father.name == "R1")
+        {
+            rispostaData = father.transform.Find("textR1").GetComponent<TextMeshPro>().text;
+        }
+        if (father.name == "R2")
+        {
+            rispostaData = father.transform.Find("textR2").GetComponent<TextMeshPro>().text;
+        }
+
+        string parola = camera.GetComponent<setQuestion>().currentQuestion.word;
+        string score = scoreAnswer.ToString();
+
+        #if UNITY_EDITOR
+            if (File.Exists(Application.dataPath + "/list_XML.xml"))
+            {
+                    Debug.Log("Esiste");
+                    camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score);
+            }
+            else
+            {
+                    Debug.Log("Non esiste");
+                    camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score);
+            }
+        #endif
+
+        #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
+            if (File.Exists(Application.persistentDataPath + "/list_XML.xml"))
+            {
+                camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score);
+            }
+            else
+            {
+                camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score);
+            }
+        #endif
+
+
+
+
+
+
+    }
+
 
 
 

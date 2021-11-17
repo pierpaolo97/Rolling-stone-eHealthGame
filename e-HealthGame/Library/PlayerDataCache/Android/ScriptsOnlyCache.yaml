@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Score
     - buttons
     - cameraFollow
+    - createXML
     - detectCollision
     - fromKeyboard
     - neverSleep
@@ -78,33 +79,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1470}
     - Class: 114
-      Script: {instanceID: 1686}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1740}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 2026}
+      Script: {instanceID: 2032}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2320}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2434}
     - Class: 114
-      Script: {instanceID: 2470}
+      Script: {instanceID: 2476}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3402}
+      Script: {instanceID: 3406}
     - Class: 114
-      Script: {instanceID: 3686}
+      Script: {instanceID: 3690}
     - Class: 114
-      Script: {instanceID: 3798}
+      Script: {instanceID: 3802}
     - Class: 114
-      Script: {instanceID: 4060}
+      Script: {instanceID: 4064}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,41 +170,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1470}
     - Class: 114
-      Script: {instanceID: 1732}
+      Script: {instanceID: 1738}
     - Class: 114
-      Script: {instanceID: 1740}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2024}
+      Script: {instanceID: 2030}
     - Class: 114
-      Script: {instanceID: 2026}
+      Script: {instanceID: 2032}
     - Class: 114
-      Script: {instanceID: 2146}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2320}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2434}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 3418}
+      Script: {instanceID: 3422}
     - Class: 114
-      Script: {instanceID: 4260}
+      Script: {instanceID: 4264}
     - Class: 114
-      Script: {instanceID: 4350}
+      Script: {instanceID: 4354}
+    - Class: 114
+      Script: {instanceID: 242822}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -293,7 +296,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: d7c8cf98027c20932817472e4741d2e6
+      Hash: ddc2234d7f47c818890bcc79bed47a57
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: setQuestion
@@ -425,7 +428,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 6cb1db1e22d2b93b012f21435b03e26b
+      Hash: 04c3283a501d1e4ee75e71d6e98427ef
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: buttons
@@ -461,7 +464,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 3671481f0a14a165fcd933938665c1fc
+      Hash: 56f6f98f53746dca09981795523ec80c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: detectCollision
@@ -711,6 +714,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: c0be43af55f629e8839b7cbef12647ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: createXML
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

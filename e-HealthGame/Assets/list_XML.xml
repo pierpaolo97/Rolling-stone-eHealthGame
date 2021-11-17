@@ -1,0 +1,4 @@
+<ListOfQuestion>
+  <Question>GATTO<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>GREGGE<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>10</Score></Question>
+</ListOfQuestion>

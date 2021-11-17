@@ -13,7 +13,7 @@ public class quit : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void OnBeforeSceneLoadRuntimeMethod()
     {
-        Debug.Log("Before scene loaded");
+        //Debug.Log("Before scene loaded");
         PlayerPrefs.SetInt("scoreLevel", 0);
         PlayerPrefs.SetInt("Level", 0);
     }

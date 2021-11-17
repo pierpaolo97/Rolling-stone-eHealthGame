@@ -11,6 +11,8 @@ public class buttons : MonoBehaviour
     public GameObject carta;
     public GameObject menuLevel;
 
+    public GameObject camera;
+
     public void playAgain()
     {
         StartCoroutine(caricaScena());
@@ -52,16 +54,20 @@ public class buttons : MonoBehaviour
     public void levelC()
     {
         PlayerPrefs.SetString("LetteraLivello", "C");
+        camera.GetComponent<setQuestion>().caricaDomande();
     }
 
     public void levelG()
     {
         PlayerPrefs.SetString("LetteraLivello", "G");
+        camera.GetComponent<setQuestion>().caricaDomande();
     }
 
     public void levelSC()
     {
         PlayerPrefs.SetString("LetteraLivello", "SC");
+        camera.GetComponent<setQuestion>().caricaDomande();
+
     }
 
     

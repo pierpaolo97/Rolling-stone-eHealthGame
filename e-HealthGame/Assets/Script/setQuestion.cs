@@ -13,8 +13,8 @@ public class setQuestion : MonoBehaviour
     public Question[] questionsC;
     public Question[] questionsG;
     public Question[] questionsSC;
-    private static List<Question> unansweredQuestions;
-    private Question currentQuestion;
+    public static List<Question> unansweredQuestions;
+    public Question currentQuestion;
     public GameObject domanda;
 
     private Renderer rend;
@@ -43,24 +43,36 @@ public class setQuestion : MonoBehaviour
         r1 = risposte.transform.Find("R1").transform.Find("textR1").GetComponent<TextMeshPro>();
         r2 = risposte.transform.Find("R2").transform.Find("textR2").GetComponent<TextMeshPro>();
 
+        //caricaDomande();
+        
+
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
-            switch (PlayerPrefs.GetString("LetteraLivello", "C"))
-            {
-                case "C":
-                    unansweredQuestions = questionsC.ToList<Question>();
-                    break;
-                case "G":
-                    unansweredQuestions = questionsG.ToList<Question>();
-                    break;
-                case "SC":
-                    unansweredQuestions = questionsSC.ToList<Question>();
-                    break;
-            }
+            //Debug.Log("dentro if");
+            caricaDomande();
         }
+        
 
         SetCurrentQuestion();
     }
+
+    public void caricaDomande()
+    {
+        switch (PlayerPrefs.GetString("LetteraLivello", "C"))
+        {
+            case "C":
+                unansweredQuestions = questionsC.ToList<Question>();
+                break;
+            case "G":
+                unansweredQuestions = questionsG.ToList<Question>();
+                break;
+            case "SC":
+                unansweredQuestions = questionsSC.ToList<Question>();
+                break;
+        }
+        //Debug.Log("dall'altro codice");
+    }
+
 
     void SetCurrentQuestion()
     {
@@ -96,7 +108,7 @@ public class setQuestion : MonoBehaviour
         switch (diff)
         {
             case "Easy":
-                Debug.LogWarning("Easy");
+                //Debug.LogWarning("Easy");
                 if (p >= 10)
                 {
                     parola();
@@ -108,7 +120,7 @@ public class setQuestion : MonoBehaviour
                 break;
 
             case "Medium":
-                Debug.LogWarning("Medium");
+                //Debug.LogWarning("Medium");
                 if (p >= 30)
                 {
                     parola();
@@ -120,7 +132,7 @@ public class setQuestion : MonoBehaviour
                 break;
 
             case "Hard":
-                Debug.LogWarning("Hard");
+                //Debug.LogWarning("Hard");
                 if (p >= 50)
                 {
                     parola();
