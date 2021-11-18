@@ -136,7 +136,7 @@ public class detectCollision : MonoBehaviour
 
     IEnumerator attendiAnimazione()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         menuLevel.GetComponent<Animator>().Play("bounce 0");
         carta.SetActive(false);
         cartasonoro.SetActive(false);
