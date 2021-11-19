@@ -28,4 +28,6 @@
   <Question>CERVELLO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>8</Score></Question>
   <Question>CUORE<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
   <Question>CHIODO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>6</Score></Question>
+  <Question>GAMBERO<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>GREGGE<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
 </ListOfQuestion>
