@@ -30,4 +30,8 @@
   <Question>CHIODO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>6</Score></Question>
   <Question>GAMBERO<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
   <Question>GREGGE<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>CICOGNA<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>CANE<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>17</Score></Question>
+  <Question>CEROTTO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>15</Score></Question>
+  <Question>COZZA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>7</Score></Question>
 </ListOfQuestion>

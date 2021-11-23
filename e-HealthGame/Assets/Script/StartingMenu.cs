@@ -13,19 +13,16 @@ public class StartingMenu : MonoBehaviour
     public void levelC()
     {
         PlayerPrefs.SetString("LetteraLivello", "C");
-        GetComponent<Camera>().GetComponent<setQuestion>().caricaDomande();
     }
 
     public void levelG()
     {
         PlayerPrefs.SetString("LetteraLivello", "G");
-        GetComponent<Camera>().GetComponent<setQuestion>().caricaDomande();
     }
 
     public void levelSC()
     {
         PlayerPrefs.SetString("LetteraLivello", "SC");
-        GetComponent<Camera>().GetComponent<setQuestion>().caricaDomande();
 
     }
 
@@ -65,4 +62,9 @@ public class StartingMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void RestartTutorial()
+    {
+        PlayerPrefs.SetInt("Level", 0);
+        SceneManager.LoadScene("Tutorial");
+    }
 }

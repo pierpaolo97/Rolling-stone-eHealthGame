@@ -18,6 +18,16 @@ public class buttons : MonoBehaviour
         StartCoroutine(caricaScena());
     }
 
+    public void RestartTutorial()
+    {
+        PlayerPrefs.SetInt("Level", 0);
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void StartGameMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void settings()
     {
@@ -67,10 +77,8 @@ public class buttons : MonoBehaviour
     {
         PlayerPrefs.SetString("LetteraLivello", "SC");
         camera.GetComponent<setQuestion>().caricaDomande();
-
     }
 
-    
     public void easy()
     {
         PlayerPrefs.SetString("difficolta", "Easy");
