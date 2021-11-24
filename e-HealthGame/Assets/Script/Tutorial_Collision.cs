@@ -230,8 +230,8 @@ public class Tutorial_Collision : MonoBehaviour
     {
         PortalsArrow.SetActive(false);
         play3.gameObject.SetActive(false);
-        this.GetComponent<Accelerometer>().speed = 20f;
-        this.GetComponent<fromKeyboard>().speed = 20f;
+        this.GetComponent<Accelerometer>().speed = 2000f;
+        this.GetComponent<fromKeyboard>().speed = 2000f;
     }
 
 

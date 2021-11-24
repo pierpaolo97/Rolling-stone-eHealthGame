@@ -60,6 +60,8 @@ public class StartingMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("SampleScene");
+        PlayerPrefs.SetInt("scoreLevel", 0);
+        PlayerPrefs.SetInt("Level", 0);
     }
 
     public void RestartTutorial()

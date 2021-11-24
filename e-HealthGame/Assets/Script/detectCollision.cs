@@ -51,8 +51,8 @@ public class detectCollision : MonoBehaviour
         {
             Debug.Log("Toccato");
             tocco = 1;
-            this.GetComponent<Accelerometer>().speed = 20f;
-            this.GetComponent<fromKeyboard>().speed = 20f;
+            this.GetComponent<Accelerometer>().speed = 2000f;
+            this.GetComponent<fromKeyboard>().speed = 2000f;
         }
 
         if (collision.transform.CompareTag("True"))

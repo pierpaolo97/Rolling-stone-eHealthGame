@@ -38,4 +38,13 @@
   <Question>CORVO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>16</Score></Question>
   <Question>CUORE<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>19</Score></Question>
   <Question>CIGNO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>8</Score></Question>
+  <Question>CIGNO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>9</Score></Question>
+  <Question>CINTURA<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>8</Score></Question>
+  <Question>COZZA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>10</Score></Question>
+  <Question>CORDA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>CAPPELLO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>10</Score></Question>
+  <Question>CIABATTA<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>CORDA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
+  <Question>CHELA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>13</Score></Question>
+  <Question>CHITARRA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>15</Score></Question>
 </ListOfQuestion>
