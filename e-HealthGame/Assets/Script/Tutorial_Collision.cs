@@ -33,6 +33,7 @@ public class Tutorial_Collision : MonoBehaviour
     public GameObject right;
     public GameObject wrong;
     public int scoreAnswer = 0;
+    public GameObject pause;
 
     public GameObject scoreObject;
     public GameObject timeObject;
@@ -111,6 +112,7 @@ public class Tutorial_Collision : MonoBehaviour
             StartCoroutine(ShowText(varText));
             Bird.SetActive(true);
         }
+
     }
 
     private void Update()
@@ -132,10 +134,10 @@ public class Tutorial_Collision : MonoBehaviour
         CheckCaroutine();
         CheckFlip();
 
-        if (check_running == false && varText == quartoText && !BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("GotoTree"))
+        /*if (check_running == false && varText == quartoText && !BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("GotoTree"))
         {
             attendiTesto();
-        }
+        }*/
     }
  
     public void FixedUpdate()
@@ -311,7 +313,7 @@ public class Tutorial_Collision : MonoBehaviour
     IEnumerator attendiAnimazione()
     {
         yield return new WaitForSeconds(3.7f);
-        menuTutorial.GetComponent<Animator>().Play("bounce 0");
+        menuTutorial.GetComponent<Animator>().Play("bounce");
         carta.SetActive(false);
         Tree.SetActive(false);
         Bird.SetActive(false);
@@ -320,6 +322,7 @@ public class Tutorial_Collision : MonoBehaviour
         wrong.SetActive(false);
         scoreObject.SetActive(false);
         timeObject.SetActive(false);
+        pause.SetActive(false);
     }
 
     IEnumerator attendiTesto()
@@ -351,6 +354,7 @@ public class Tutorial_Collision : MonoBehaviour
             Bird.GetComponent<Animator>().Play("idleMute");
             play0.interactable = true;
         }
+
     }
 
     public void SpeakFlyingCheckCards()

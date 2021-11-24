@@ -28,6 +28,7 @@ public class detectCollision : MonoBehaviour
     public GameObject cartasonoro;
     public GameObject right;
     public GameObject wrong;
+    public GameObject pause;
     public int scoreAnswer = 0;
 
     public GameObject scoreObject;
@@ -127,7 +128,7 @@ public class detectCollision : MonoBehaviour
     }
 
     private void fineLivello()
-    {     
+    {
         menuLevel.SetActive(true);
         menuLevelText.text = PlayerPrefs.GetString("LetteraLivello", "C");
         menuScoreText.text = "SCORE: " + scoreValue.ToString();   
@@ -144,6 +145,7 @@ public class detectCollision : MonoBehaviour
         wrong.SetActive(false);
         scoreObject.SetActive(false);
         timeObject.SetActive(false);
+        pause.SetActive(false);
     }
 
 

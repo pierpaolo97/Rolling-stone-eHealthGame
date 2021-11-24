@@ -10,8 +10,25 @@ public class buttons : MonoBehaviour
     public GameObject gameover;
     public GameObject carta;
     public GameObject menuLevel;
-
+    public GameObject pausemenu;
+    public GameObject pause;
     public GameObject camera;
+
+    public static bool GameIsPaused = false;
+
+    public void Pause()
+    {
+        pause.SetActive(false);
+        pausemenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        pausemenu.SetActive(false);
+        pause.SetActive(true);
+        Time.timeScale = 1f;
+    }
 
     public void playAgain()
     {

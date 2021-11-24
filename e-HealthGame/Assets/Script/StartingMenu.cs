@@ -7,8 +7,8 @@ public class StartingMenu : MonoBehaviour
 {
 
     public GameObject StartingSettings;
-
-
+    public GameObject pausemenu;
+    public GameObject pause;
 
     public void levelC()
     {
@@ -66,5 +66,19 @@ public class StartingMenu : MonoBehaviour
     {
         PlayerPrefs.SetInt("Level", 0);
         SceneManager.LoadScene("Tutorial");
+    }
+
+    public void Pause()
+    {
+        pause.SetActive(false);
+        pausemenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        pausemenu.SetActive(false);
+        pause.SetActive(true);
+        Time.timeScale = 1f;
     }
 }
