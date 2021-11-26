@@ -31,9 +31,16 @@ public class setQuestion : MonoBehaviour
     public GameObject audioObject;
     public AudioSource audioSource;
     public Texture2D audioTexture;
+    public GameObject transition;
 
     void Start()
     {
+
+        if (PlayerPrefs.GetInt("Level", 0)== 0)
+        {
+            transition.SetActive(true);
+        }
+
         Debug.Log(PlayerPrefs.GetString("LetteraLivello"));
         rend = domanda.transform.Find("Immagine").GetComponent<MeshRenderer>();
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();

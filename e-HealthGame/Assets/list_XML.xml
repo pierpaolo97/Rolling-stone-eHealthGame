@@ -47,4 +47,26 @@
   <Question>CORDA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
   <Question>CHELA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>13</Score></Question>
   <Question>CHITARRA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>15</Score></Question>
+  <Question>CEROTTO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>7</Score><Type>PAROLA</Type></Question>
+  <Question>CUORE<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>PAROLA</Type></Question>
+  <Question>CARAFFA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>7</Score><Type>AUDIO</Type></Question>
+  <Question>CERVELLO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>3</Score><Type>PAROLA</Type></Question>
+  <Question>CUCCIA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type></Question>
+  <Question>CHITARRA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>PAROLA</Type></Question>
+  <Question>CEROTTO<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>15</Time></Question>
+  <Question>CEROTTO<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>15</Time></Question>
+  <Question>CAFFÈ<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>6</Score><Type>AUDIO</Type><Time>9</Time></Question>
+  <Question>COZZA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>5</Time></Question>
+  <Question>CINTURA<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>PAROLA</Type><Time>5</Time></Question>
+  <Question>CICOGNA<Answer>DURO</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>PAROLA</Type><Time>7</Time></Question>
+  <Question>CIELO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>14</Score><Type>AUDIO</Type><Time>4</Time></Question>
+  <Question>CORVO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>5</Score><Type>AUDIO</Type><Time>10</Time></Question>
+  <Question>COCCODRILLO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>18</Score><Type>AUDIO</Type><Time>3</Time></Question>
+  <Question>COZZA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>10</Time></Question>
+  <Question>CERVELLO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>6</Score><Type>AUDIO</Type><Time>9</Time></Question>
+  <Question>CASA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>4</Score><Type>PAROLA</Type><Time>11</Time></Question>
+  <Question>CEROTTO<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>16</Score><Type>PAROLA</Type><Time>3</Time></Question>
+  <Question>CASA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>10</Time></Question>
+  <Question>CUSCINO<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>PAROLA</Type><Time>8</Time></Question>
+  <Question>CASTAGNA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>6</Time></Question>
 </ListOfQuestion>

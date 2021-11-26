@@ -7,8 +7,15 @@ public class cameraFollow : MonoBehaviour
     public Transform target;
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
+    public GameObject transition;
 
-   
+    public void Start()
+    {
+        if (PlayerPrefs.GetInt("Level", 0) == 0)
+        {
+            transition.SetActive(true);
+        }
+    }
 
     void FixedUpdate()
     {

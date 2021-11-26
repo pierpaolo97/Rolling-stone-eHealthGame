@@ -27,8 +27,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -410,7 +412,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: ddc2234d7f47c818890bcc79bed47a57
+      Hash: 92eb08f61ec20f983920d7432ca89d47
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: setQuestion
@@ -440,7 +442,7 @@ ScriptsOnlyBuild:
     className: neverSleep
   - hash:
       serializedVersion: 2
-      Hash: 9d5f29f525d96a8294afed399f31fbff
+      Hash: 2abb337a26c50032b0a7e86051e5433b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Accelerometer
@@ -596,7 +598,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 54c9a07ce6972f59eda14eff70a92e5f
+      Hash: 6af344b5c8c6579ea1359caa82f2777a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: detectCollision
@@ -734,7 +736,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: bf51d269f4cb02c58170c63f7e8878d6
+      Hash: 7aac438811dea855e56cce733ffa9463
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StartingMenu
@@ -830,7 +832,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 7c4d61ba679beaa5d71821c8c9d31078
+      Hash: 82584af3f82cce6c5b545e37b3d182f2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: cameraFollow

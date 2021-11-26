@@ -21,6 +21,7 @@ public class ButtonsTutorial : MonoBehaviour
 
     public void StartGameMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 

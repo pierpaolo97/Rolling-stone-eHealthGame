@@ -38,6 +38,8 @@ public class detectCollision : MonoBehaviour
     public GameObject camera;
     public string rispostaData;
 
+    public string xmlTime;
+
     private void Start()
     {
         scoreValue = this.GetComponent<Score>().score;
@@ -49,10 +51,10 @@ public class detectCollision : MonoBehaviour
         savePosCollision = collision.transform.position;
         if ( (collision.transform.name == "Plane" || collision.transform.name == "DOMANDA") && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
-            Debug.Log("Toccato");
-            tocco = 1;
+            Debug.Log("Toccato");           
             this.GetComponent<Accelerometer>().speed = 2000f;
             this.GetComponent<fromKeyboard>().speed = 2000f;
+            tocco = 1;
         }
 
         if (collision.transform.CompareTag("True"))
@@ -108,6 +110,7 @@ public class detectCollision : MonoBehaviour
     private void rispostaEsatta(Collision collision)
     {
         Debug.Log(timeStart);
+        xmlTime = Mathf.RoundToInt(timeStart).ToString();
         right.SetActive(true);
         this.transform.position = collision.transform.position;
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -122,6 +125,7 @@ public class detectCollision : MonoBehaviour
 
     private void rispostaSbagliata(Collision collision)
     {
+        xmlTime = Mathf.RoundToInt(timeStart).ToString();
         wrong.SetActive(true);
         this.transform.position = collision.transform.position;
         this.GetComponent<Accelerometer>().speed = 0f;
@@ -164,30 +168,43 @@ public class detectCollision : MonoBehaviour
 
         string parola = camera.GetComponent<setQuestion>().currentQuestion.word;
         string score = scoreAnswer.ToString();
+        bool audio = camera.GetComponent<setQuestion>().audioObject.activeSelf;
+
+        string xmlAudio = "";
+
+        if (audio)
+        {
+            xmlAudio = "AUDIO";
+        }
+        else
+        {
+            xmlAudio = "PAROLA";
+        }
+
 
         #if UNITY_EDITOR
             if (File.Exists(Application.dataPath + "/list_XML.xml"))
             {
                     Debug.Log("Esiste");
-                    camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score);
+                    camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
             }
             else
             {
                     Debug.Log("Non esiste");
-                    camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score);
+                    camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
             }
-        #endif
+#endif
 
-        #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
+#if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
             if (File.Exists(Application.persistentDataPath + "/list_XML.xml"))
             {
-                camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score);
+                camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
             }
             else
             {
-                camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score);
+                camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
             }
-        #endif
+#endif
 
 
 

@@ -10,6 +10,9 @@ public class StartingMenu : MonoBehaviour
     public GameObject pausemenu;
     public GameObject pause;
 
+    public GameObject transition;
+    public GameObject endtransition;
+
     public void levelC()
     {
         PlayerPrefs.SetString("LetteraLivello", "C");
@@ -59,15 +62,15 @@ public class StartingMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("SampleScene");
         PlayerPrefs.SetInt("scoreLevel", 0);
         PlayerPrefs.SetInt("Level", 0);
+        StartCoroutine(loadGame());
     }
 
     public void RestartTutorial()
     {
         PlayerPrefs.SetInt("Level", 0);
-        SceneManager.LoadScene("Tutorial");
+        StartCoroutine(loadTutorial());
     }
 
     public void Pause()
@@ -83,4 +86,21 @@ public class StartingMenu : MonoBehaviour
         pause.SetActive(true);
         Time.timeScale = 1f;
     }
+
+    IEnumerator loadGame()
+    {
+        transition.SetActive(true);
+        yield return new WaitForSeconds(1.4f);
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    IEnumerator loadTutorial()
+    {
+        transition.SetActive(true);
+        yield return new WaitForSeconds(1.4f);
+        SceneManager.LoadScene("Tutorial");
+    }
+
+
+
 }

@@ -10,7 +10,7 @@ public class createXML : MonoBehaviour
 {
     public Text provaText;
 
-    public void addDataToXML(string q, string a, string r, string sc)
+    public void addDataToXML(string q, string a, string r, string sc, string audio, string timeXML)
     {
         XmlDocument xmlDocument = new XmlDocument();
 
@@ -40,6 +40,14 @@ public class createXML : MonoBehaviour
         score.InnerText = sc;
         question.AppendChild(score);
 
+        XmlElement audioOrWord = xmlDocument.CreateElement("Type");
+        audioOrWord.InnerText = audio;
+        question.AppendChild(audioOrWord);
+
+        XmlElement time = xmlDocument.CreateElement("Time");
+        time.InnerText = timeXML;
+        question.AppendChild(time);
+
         xmlDocument.AppendChild(root);
 
         #if UNITY_EDITOR
@@ -57,7 +65,7 @@ public class createXML : MonoBehaviour
 
     }
 
-    public void newXML(string q, string a, string r, string sc)
+    public void newXML(string q, string a, string r, string sc, string audio, string timeXML)
     {
         XmlDocument xmlDocument = new XmlDocument();
         XmlElement root = xmlDocument.CreateElement("ListOfQuestion");
@@ -77,6 +85,14 @@ public class createXML : MonoBehaviour
         XmlElement score = xmlDocument.CreateElement("Score");
         score.InnerText = sc;
         question.AppendChild(score);
+
+        XmlElement audioOrWord = xmlDocument.CreateElement("Type");
+        audioOrWord.InnerText = audio;
+        question.AppendChild(audioOrWord);
+
+        XmlElement time = xmlDocument.CreateElement("Time");
+        time.InnerText = timeXML;
+        question.AppendChild(time);
 
         xmlDocument.AppendChild(root);
 
