@@ -47,4 +47,9 @@
   <Question>CORDA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score></Question>
   <Question>CHELA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>13</Score></Question>
   <Question>CHITARRA<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>15</Score></Question>
+  <Question>CUSCINO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>3</Score></Question>
+  <Question>CIPOLLA<Answer>DOLCE</Answer><OkOrNot>CORRECT</OkOrNot><Score>4</Score></Question>
+  <Question>CAVALLI<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>11</Score></Question>
+  <Question>CASE<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>5</Score></Question>
+  <Question>CORVO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>5</Score></Question>
 </ListOfQuestion>

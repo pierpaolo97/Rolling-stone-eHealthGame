@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657642, g: 0.49641156, b: 0.5748181, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8083,477 +8083,484 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionsC:
-  - texture: {fileID: 2800000, guid: 2114432c8eadf2c458b94024f732d196, type: 3}
-    word: CASA
+  - texture: {fileID: 2800000, guid: e5ddc5dfdf6662e4e91f33a5717acd42, type: 3}
+    word: CASE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 1f787cca992810c49bf09a869996c9e2, type: 3}
+    audioWord: {fileID: 8300000, guid: c46caaa70bf168445a9a622f86ae0af5, type: 3}
+  - texture: {fileID: 2800000, guid: 4825a296c75e47c47b470c5554087e5c, type: 3}
     word: CASTAGNA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 66767867dbd8c2f47859a024edf14e80, type: 3}
+    audioWord: {fileID: 8300000, guid: 13bd66e06c0564b47bf0226d180d1c08, type: 3}
+  - texture: {fileID: 2800000, guid: 2dd49740ab7384842ad01be22acaa8a3, type: 3}
     word: CANE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 56fbdcd899f66f14daecb02670e37382, type: 3}
+    audioWord: {fileID: 8300000, guid: 3cda73d3f03ee9f418225d49f81c4fc0, type: 3}
+  - texture: {fileID: 2800000, guid: af7c32cfeb54ed743802e75fc078cacc, type: 3}
     word: CAPPELLO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 28f7f7c3e4bcd2d4291c3d4c972a5658, type: 3}
-    word: CAVALLO
+    audioWord: {fileID: 8300000, guid: 5800be1cc9259114e8831d773db161e6, type: 3}
+  - texture: {fileID: 2800000, guid: 7366952c75604054ea237e35bdd9bdf3, type: 3}
+    word: CAVALLI
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 9bb481477f66e634ca7c73584239483c, type: 3}
+    audioWord: {fileID: 8300000, guid: febead03715503144a7af42ea26328e3, type: 3}
+  - texture: {fileID: 2800000, guid: c4b42249ecf6e854b8805d7e2fd39581, type: 3}
     word: CELLULA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 10e028024f0887d4cb9aed753e4f88f8, type: 3}
+    audioWord: {fileID: 8300000, guid: 6ac80debd21d1674f86db48adeef399e, type: 3}
+  - texture: {fileID: 2800000, guid: ba3430ded7aa604479e15234887a9319, type: 3}
     word: CEROTTO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 93ed14bde2708794daf64fded48d1c50, type: 3}
+    audioWord: {fileID: 8300000, guid: 2f11226ca49f8fd48a4da7d25ab4f5dd, type: 3}
+  - texture: {fileID: 2800000, guid: 551d1a0271348e84a8409f9557ecaf3f, type: 3}
     word: CERVELLO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: d99bbd8bacaf68747923cfdf788175ff, type: 3}
-    word: CHIAVE
+    audioWord: {fileID: 8300000, guid: 6a1c422ec24eb9747b3e80244a381188, type: 3}
+  - texture: {fileID: 2800000, guid: 23f0bdef59c68f2449485c0d7329c427, type: 3}
+    word: CHIAVI
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
+    audioWord: {fileID: 8300000, guid: 7e837b9dd9c770c41b64e97fd2d5748b, type: 3}
   - texture: {fileID: 2800000, guid: 66b59c1ef4eac8247a9038bbf3327b60, type: 3}
-    word: CHIODO
+    word: CHIODI
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 9d823b956c4be4646b8cef82e2a6f73a, type: 3}
+    audioWord: {fileID: 8300000, guid: 2e99781facadd7443a7a3f355bb49427, type: 3}
+  - texture: {fileID: 2800000, guid: d5c580d5eef28dc429297b9e4bf52843, type: 3}
     word: CHITARRA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 0261826994033b048bfb227097c98378, type: 3}
+    audioWord: {fileID: 8300000, guid: 62d46a3fa09e1c54e9e7d18e9fbb9041, type: 3}
+  - texture: {fileID: 2800000, guid: 26df0efe9bcbe874db64929955cf6d0f, type: 3}
     word: CIABATTA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: ab12321c43ce3a84893919e7358dfcaa, type: 3}
+    audioWord: {fileID: 8300000, guid: 222e64c492580ad4aa59d4695cf47925, type: 3}
+  - texture: {fileID: 2800000, guid: 31f7fc2139a8603409690f366c43a375, type: 3}
     word: CICOGNA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 3b5e27c0a83ece1419df8b036d47618f, type: 3}
+    audioWord: {fileID: 8300000, guid: 8aefd5131c335a848aca14152072d62f, type: 3}
+  - texture: {fileID: 2800000, guid: 25e7e81f4135c844fb52fae0f4c3fe6f, type: 3}
     word: CIELO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 5dc75e15d2e57884fbe4b80060cc90c7, type: 3}
+    audioWord: {fileID: 8300000, guid: 2ce5f3e0caf81324292bf22671bf9603, type: 3}
+  - texture: {fileID: 2800000, guid: 181254c6b88740c49b12bf397680370c, type: 3}
     word: CIGNO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 30434687760bf7b469b2af79149614b2, type: 3}
+    audioWord: {fileID: 8300000, guid: 47e45e1d4deb4844a8cc31e6e5fcf311, type: 3}
+  - texture: {fileID: 2800000, guid: 6c5c377fa81a4cb4badcdd7466f5aa71, type: 3}
     word: CINGHIALE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 885e9824f9fbafa4a891d4a91fdfcad2, type: 3}
+    audioWord: {fileID: 8300000, guid: c22570471b991714c921a6a733fb83ae, type: 3}
+  - texture: {fileID: 2800000, guid: 86adf5c2a45051c40a28175aae5b9959, type: 3}
     word: CINTURA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 88a222adcc13c6e4ca30e67af6849560, type: 3}
+    audioWord: {fileID: 8300000, guid: 06e59c5638e45e04ab12e8ff23dca965, type: 3}
+  - texture: {fileID: 2800000, guid: 88835ea3dc53d5a488e5591d06b77608, type: 3}
     word: CIPOLLA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: c72c80f4d8466a04f8195feacdcc7e79, type: 3}
+    audioWord: {fileID: 8300000, guid: 3c23d80f30ab6244892f5e9c4eb81961, type: 3}
+  - texture: {fileID: 2800000, guid: fd67f84764f5b6642b697d2905ce9f38, type: 3}
     word: COCCODRILLO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 10b875c9b890a9247a42495bd93f788d, type: 3}
+    audioWord: {fileID: 8300000, guid: 067ad440b8aa7884584e18939785142e, type: 3}
+  - texture: {fileID: 2800000, guid: c0670c1f8deca98488404f07fdccde24, type: 3}
     word: COCCINELLA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: daecec30eb886284bb6dbf6531139264, type: 3}
+    audioWord: {fileID: 8300000, guid: 50d27c40b3c842447b939aa4e7c62158, type: 3}
+  - texture: {fileID: 2800000, guid: daae949c33e69cd44a10d86c2f0b59de, type: 3}
     word: CORDA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 161aa60d4af381c45b31ad34c4cc25c6, type: 3}
+    audioWord: {fileID: 8300000, guid: 1e31a12fb6801cc4a84cf5e512616bb7, type: 3}
+  - texture: {fileID: 2800000, guid: ba7e891a9c63a1d4ab58fba071c3b1da, type: 3}
     word: CORVO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 9a309a23bfd8c574f9934353ae6fbf71, type: 3}
+    audioWord: {fileID: 8300000, guid: b65b14422874d8646a91bb4cca327c03, type: 3}
+  - texture: {fileID: 2800000, guid: 692bd681a8d7af241a5975e13b1f6963, type: 3}
     word: COZZA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: b4bdea0086c9bf04291b8705e2d7d2eb, type: 3}
+    audioWord: {fileID: 8300000, guid: c67f75c556ea76e4ca33fd3026b21dcf, type: 3}
+  - texture: {fileID: 2800000, guid: d0aa271ee67316e4e9e9375d3a120dec, type: 3}
     word: CUCCIA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 36fbde53cc0a7e446bfa18cb59f7cab8, type: 3}
+    audioWord: {fileID: 8300000, guid: 63af4bab1a5b33c4db080e29ec1c4e0a, type: 3}
+  - texture: {fileID: 2800000, guid: 6e2fd1f0f06c29b41ad13c7085cbe50c, type: 3}
     word: CUORE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: dbd411d2aa0b38748a7af45886134755, type: 3}
+    audioWord: {fileID: 8300000, guid: 918954b089250c243b90c6e13a056c9e, type: 3}
+  - texture: {fileID: 2800000, guid: 7b8c62791c16bc048aecd3024fbf57a1, type: 3}
     word: CUSCINO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 6c3f9888ec2118546bbd4b1178b9966c, type: 3}
+    audioWord: {fileID: 8300000, guid: e04addee545237141a8e3300ffb987ea, type: 3}
+  - texture: {fileID: 2800000, guid: b87e05ad898e0c742aeffa89bd002d79, type: 3}
     word: "CAFF\xC8"
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 2662073891d443c4290262edf7a641b5, type: 3}
+    audioWord: {fileID: 8300000, guid: 33fddc3a50225314e9e422f3343929e7, type: 3}
+  - texture: {fileID: 2800000, guid: 737bcaf475904f74482460d546398683, type: 3}
     word: CHELA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 3722dc8921e2fd34395435e8c0bd48dc, type: 3}
-    word: CARAFFA
+    audioWord: {fileID: 8300000, guid: cd4fc4eed4441eb4fa00fe4cdf7fb6cd, type: 3}
+  - texture: {fileID: 2800000, guid: 8e8734785d859e145a926b52b724debc, type: 3}
+    word: CARAFFE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
+    audioWord: {fileID: 8300000, guid: f89cd374f335a9048a64de94411c556e, type: 3}
   questionsG:
-  - texture: {fileID: 2800000, guid: 58ded7fa09280b94da819fc524fb6bd6, type: 3}
+  - texture: {fileID: 2800000, guid: fe8705a3750f5a64cb3b4f926797563d, type: 3}
     word: GALLINA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 0915dc3f4343c1b4e8e66c22b67df060, type: 3}
+    audioWord: {fileID: 8300000, guid: dc65244d6438c9040afcb51674b34261, type: 3}
+  - texture: {fileID: 2800000, guid: 28f72cf56ca65584b9b1a80f1c1fcea7, type: 3}
     word: GAMBERO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 97e9ceccd0846d6499201ae15a561279, type: 3}
-    word: GANCIO
+    audioWord: {fileID: 8300000, guid: 4a3a69f6e3f5bb24aa58daf8289cc5f2, type: 3}
+  - texture: {fileID: 2800000, guid: fc9721fefaa5e2b4fbc2191c9ac2ea56, type: 3}
+    word: GANCI
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 35b229a4a1f53544d9d3d1f9bd18190a, type: 3}
+    audioWord: {fileID: 8300000, guid: 39b8035561ef7c24895655603ff0903c, type: 3}
+  - texture: {fileID: 2800000, guid: 288221a87dae67e408f5023a25fa690b, type: 3}
     word: GATTO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 0fb4ab2f81f170e4f959fd49fbbe4af9, type: 3}
+    audioWord: {fileID: 8300000, guid: 4d86d5c992d0e8e46a3b98f0d6d8bf8f, type: 3}
+  - texture: {fileID: 2800000, guid: fdf15524981bc97408cb1e32f52fee52, type: 3}
     word: GELATO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 0b6e990f94ed4094b9061c797af5bc31, type: 3}
+    audioWord: {fileID: 8300000, guid: 8b0d63d8fafc8b944a17ffbba9bb95c9, type: 3}
+  - texture: {fileID: 2800000, guid: ea8abf64016dc134cb5d0aca2720d392, type: 3}
     word: GHIACCIOLO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: a1d71ec51f79a2a429a62700f6b2e2e9, type: 3}
-    word: GHIANDA
+    audioWord: {fileID: 8300000, guid: 6203729e8a06cfc409d3c9f6c0cb0a54, type: 3}
+  - texture: {fileID: 2800000, guid: 9fd2eb68feb342d42b139093b5509777, type: 3}
+    word: GHIANDE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: dfb30ce9618ecaa45aa9577397d9ad18, type: 3}
+    audioWord: {fileID: 8300000, guid: a478e2a1a90ca0f4ba2d146da8ee250f, type: 3}
+  - texture: {fileID: 2800000, guid: ce2c3f854fdbb4a4289a34d39d49f285, type: 3}
     word: GHIRO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: d510fb6a128b997408cb3bef72adbe8f, type: 3}
+    audioWord: {fileID: 8300000, guid: ab0ab4bf06a3f204faeb2a58b2094477, type: 3}
+  - texture: {fileID: 2800000, guid: d7bfc904be6719c4587df7a605fd82ab, type: 3}
     word: GIGANTE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 385a0965a9da66840bc9635e9b32f496, type: 3}
+    audioWord: {fileID: 8300000, guid: 7a307f50010060d4c80295c26347a920, type: 3}
+  - texture: {fileID: 2800000, guid: 549a3c21938f2494da3269c6c535e61a, type: 3}
     word: GINOCCHIO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: bcbeb5f5798ada1498c58b21b57521fc, type: 3}
+    audioWord: {fileID: 8300000, guid: 573b9dfadbf5c7e45bc29585a4160330, type: 3}
+  - texture: {fileID: 2800000, guid: b8f53957171cb574fb9bd9e5ce9f725d, type: 3}
     word: GOMITOLO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 5369e899b39e46c45879525fe9bf5f85, type: 3}
+    audioWord: {fileID: 8300000, guid: 3fbb426d1582bfa47b0ba76fa7ec0234, type: 3}
+  - texture: {fileID: 2800000, guid: 6b12b2a673bbf5e499852d130bbdff3d, type: 3}
     word: GOMMA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 91139593579c5c646af305a8778575d7, type: 3}
+    audioWord: {fileID: 8300000, guid: 3fbb426d1582bfa47b0ba76fa7ec0234, type: 3}
+  - texture: {fileID: 2800000, guid: 579cb6566f7809147b377a46fbe8f38b, type: 3}
     word: GORILLA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 7b6a44fb56911c240ace4bdc17d62c65, type: 3}
+    audioWord: {fileID: 8300000, guid: 68a73639c6f1f8843b1dcdd43f38c659, type: 3}
+  - texture: {fileID: 2800000, guid: ad764fd2ead06ef49ac7ac0433554d1e, type: 3}
     word: GUANTO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: c394744b88d32c446bb560a1147f8c30, type: 3}
+    audioWord: {fileID: 8300000, guid: 4b22f5b0e29826d45b6b22a9dadd6189, type: 3}
+  - texture: {fileID: 2800000, guid: 433b15d6ee0b2e946a061e77fba36113, type: 3}
     word: GUFO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 491418dd5c20927419f24ef90ce22bfc, type: 3}
+    audioWord: {fileID: 8300000, guid: 34468946d3be95440beacb168b5b1ff6, type: 3}
+  - texture: {fileID: 2800000, guid: 3022df1482edc8f42b4875491d6916be, type: 3}
     word: GUINZAGLIO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: c3352d2e84d8ec6409fdf8875136e3a1, type: 3}
+    audioWord: {fileID: 8300000, guid: 19cc48151365ee64c8e94350b0d9facf, type: 3}
+  - texture: {fileID: 2800000, guid: e14d5db22e0f13e4da1bfa712da68670, type: 3}
     word: GENIO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 4027b9e588ad989439556e6a5f9d0f1b, type: 3}
+    audioWord: {fileID: 8300000, guid: 68c9cfac073181e4789bf786ee46a8e7, type: 3}
+  - texture: {fileID: 2800000, guid: 939da49cd6cec1e41b0068ee477721fd, type: 3}
     word: GAMBE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: e6ec338d047a8b740a586ebeeed69614, type: 3}
+    audioWord: {fileID: 8300000, guid: 8d2f5248acde38b488c1095ecb05f7d6, type: 3}
+  - texture: {fileID: 2800000, guid: 6e1597e0ebfded9449a9533d4f9a50a3, type: 3}
     word: GAMBO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: bbc174127d0b47749bc5e37a6e79c8fa, type: 3}
+    audioWord: {fileID: 8300000, guid: 7f98fcab8ce85fb4fbdbf48659bd09ef, type: 3}
+  - texture: {fileID: 2800000, guid: 3df2f138aeb8f6c46a493d662d7637c5, type: 3}
     word: GHEPARDO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: f02134bafb15f3b4e9292fc118dab6f9, type: 3}
+    audioWord: {fileID: 8300000, guid: b022719fcced44549916a4e0506b1421, type: 3}
+  - texture: {fileID: 2800000, guid: 1fda42ce436b7b84188791f88401f74e, type: 3}
     word: GOBBA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 30102bae50875da41b6ce264707ebaf1, type: 3}
+    audioWord: {fileID: 8300000, guid: 88478919a458c544d8c21d4fdfe1f07f, type: 3}
+  - texture: {fileID: 2800000, guid: a2fb845b171575c46b40dce0d2c986ec, type: 3}
     word: GREGGE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: fe435cb7ab5bd5943922fe05e931c37a, type: 3}
+    audioWord: {fileID: 8300000, guid: 05323434c9b94f645a6126970bc78c55, type: 3}
+  - texture: {fileID: 2800000, guid: 1a2a8fda8d8adb444b554cb64575c98d, type: 3}
     word: GIRAFFA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 89824566a5e53c646ace26f51a8a9936, type: 3}
+    audioWord: {fileID: 8300000, guid: 4e400127f5aa7b64b91f959ef0290a8b, type: 3}
+  - texture: {fileID: 2800000, guid: dd4d55067596bc641af5350d038f6d7e, type: 3}
     word: GENGIVA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 7d0e866a52bc36a4e91a1e3c156ff2de, type: 3}
+    audioWord: {fileID: 8300000, guid: 4e400127f5aa7b64b91f959ef0290a8b, type: 3}
+  - texture: {fileID: 2800000, guid: 4c77ab31f9b1c1f4189d62ad8f594f78, type: 3}
     word: GEMELLI
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
+    audioWord: {fileID: 8300000, guid: 4f663209422c1c546b0fba7f3f451ebc, type: 3}
+  - texture: {fileID: 2800000, guid: e71f019f72c8a0e4ba35b555c1f611e3, type: 3}
+    word: GHERIGLIO
+    risposte:
+    - DURO
+    - DOLCE
+    rispostaGiusta: DURO
+    audioWord: {fileID: 8300000, guid: 6c4164189791b2f4fb60e9076c5bfcd6, type: 3}
   questionsSC:
-  - texture: {fileID: 2800000, guid: 3c6c687d54039c34f870ec2a673a65f9, type: 3}
+  - texture: {fileID: 2800000, guid: a674222321a6d1646bfe03e048413230, type: 3}
     word: SCACCHIERA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 89bd48597e4dbe044a94b380d9c29068, type: 3}
-    word: SCARPA
+    audioWord: {fileID: 8300000, guid: 6fdecdc2bc18fe949a1b5a39e7da589c, type: 3}
+  - texture: {fileID: 2800000, guid: a5b6f51077125f849a8e02d29c1f5799, type: 3}
+    word: SCARPE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 4ea219ae82893094e9f61bda21e6b402, type: 3}
+    audioWord: {fileID: 8300000, guid: a3f90d6072c149f46962114daa4f648d, type: 3}
+  - texture: {fileID: 2800000, guid: 72257d0b1091a51479fd7212ba41c79a, type: 3}
     word: SCATOLA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 72aff878fc3b5b7429b6f4e3f4cb7245, type: 3}
+    audioWord: {fileID: 8300000, guid: 03ce3874173a3854290720aebd1b1f94, type: 3}
+  - texture: {fileID: 2800000, guid: 7b9350fb4bee2da4f8b82b1357ee3336, type: 3}
     word: SCERIFFO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 97cf8aed3171544459eb39ec8ca16610, type: 3}
+    audioWord: {fileID: 8300000, guid: d6abeb6a68a85f64980d67e2e27cba18, type: 3}
+  - texture: {fileID: 2800000, guid: db96867d8b43a4f4a8b7c7f0e1a008ab, type: 3}
     word: SCHELETRO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 0019d4a8b8370f946873fce5de2a115d, type: 3}
+    audioWord: {fileID: 8300000, guid: 2e5b845efa0b6dc4ab39b3101fcdb9f4, type: 3}
+  - texture: {fileID: 2800000, guid: 47699d179b9fd114c9efb6ce10bb8faa, type: 3}
     word: SCHIUMA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 81c76fa09b5097e4e90a5397d8d31a7a, type: 3}
+    audioWord: {fileID: 8300000, guid: f1352ac80a1ed7646ba60ad0081c21c4, type: 3}
+  - texture: {fileID: 2800000, guid: 2742217ad4166824ab5fc294cb97bdbc, type: 3}
     word: SCIARPA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: c87ed95484b024240abc8aea132c3617, type: 3}
+    audioWord: {fileID: 8300000, guid: 9dd0916fe8a5e384ca21df9d96f8095d, type: 3}
+  - texture: {fileID: 2800000, guid: 91f0bc9b5f54a8b40933847fca51fbfe, type: 3}
     word: SCIMMIA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DOLCE
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: f39145742b01edd42b5110d54035a35f, type: 3}
+    audioWord: {fileID: 8300000, guid: af8068da7a1ff294aab3d8ddab697251, type: 3}
+  - texture: {fileID: 2800000, guid: eb257a3733b99e640967ad8cb613a74c, type: 3}
     word: SCOIATTOLO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: d3e8268c4211d1f4c8862f578be09827, type: 3}
+    audioWord: {fileID: 8300000, guid: dada41bde0c090b499f866870dc8220a, type: 3}
+  - texture: {fileID: 2800000, guid: a01e2eb887881ad45842011d48c1a23d, type: 3}
     word: SCOPA
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 5c3a12b2bfbe67e4a8ec71d9739ee399, type: 3}
+    audioWord: {fileID: 8300000, guid: 5e42fec2f64b32b4894bb8890319148d, type: 3}
+  - texture: {fileID: 2800000, guid: e32f853363c654d4dad3104db255ac77, type: 3}
     word: SCORPIONE
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: c26bfc5ad4f869143affca7ae743565a, type: 3}
+    audioWord: {fileID: 8300000, guid: 058395900fad42f4a88451f5ddcba012, type: 3}
+  - texture: {fileID: 2800000, guid: d1952926adb2780489bdb08195f03c74, type: 3}
     word: SCUDO
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
-  - texture: {fileID: 2800000, guid: 16bcef07ccd2a0549b3007c1f48842b3, type: 3}
+    audioWord: {fileID: 8300000, guid: 7bf7747824332be449b492e60c220cb3, type: 3}
+  - texture: {fileID: 2800000, guid: a674222321a6d1646bfe03e048413230, type: 3}
     word: SCACCHI
     risposte:
     - DURO
     - DOLCE
     rispostaGiusta: DURO
-    audioWord: {fileID: 8300000, guid: fe55f9ea888e6ab4baf50177c5ea6f56, type: 3}
+    audioWord: {fileID: 8300000, guid: 9f905e506f2c3a4449c6717ac784b3c5, type: 3}
   currentQuestion:
     texture: {fileID: 0}
     word: 
