@@ -71,4 +71,6 @@
   <Question>CASTAGNA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>6</Time></Question>
   <Question>GAMBE<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>10</Score><Type>PAROLA</Type><Time>5</Time></Question>
   <Question>GATTO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>11</Score><Type>PAROLA</Type><Time>5</Time></Question>
+  <Question>GUANTO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>8</Score><Type>PAROLA</Type><Time>6</Time></Question>
+  <Question>GAMBO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>9</Score><Type>PAROLA</Type><Time>6</Time></Question>
 </ListOfQuestion>
