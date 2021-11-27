@@ -69,4 +69,6 @@
   <Question>CASA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>10</Time></Question>
   <Question>CUSCINO<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>PAROLA</Type><Time>8</Time></Question>
   <Question>CASTAGNA<Answer>DOLCE</Answer><OkOrNot>WRONG</OkOrNot><Score>0</Score><Type>AUDIO</Type><Time>6</Time></Question>
+  <Question>GAMBE<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>10</Score><Type>PAROLA</Type><Time>5</Time></Question>
+  <Question>GATTO<Answer>DURO</Answer><OkOrNot>CORRECT</OkOrNot><Score>11</Score><Type>PAROLA</Type><Time>5</Time></Question>
 </ListOfQuestion>
