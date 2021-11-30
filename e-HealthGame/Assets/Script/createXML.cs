@@ -10,7 +10,7 @@ public class createXML : MonoBehaviour
 {
     public Text provaText;
 
-    public void addDataToXML(string q, string a, string r, string sc, string audio, string timeXML)
+    public void addDataToXML(string q, string a, string r, string sc, string audio, string timeXML, string X, string Y, string Z)
     {
         XmlDocument xmlDocument = new XmlDocument();
 
@@ -48,6 +48,19 @@ public class createXML : MonoBehaviour
         time.InnerText = timeXML;
         question.AppendChild(time);
 
+        XmlElement X_position = xmlDocument.CreateElement("X_position");
+        X_position.InnerText = X.ToString();
+        question.AppendChild(X_position);
+
+        XmlElement Y_position = xmlDocument.CreateElement("Y_position");
+        Y_position.InnerText = Y.ToString();
+        question.AppendChild(Y_position);
+
+        XmlElement Z_position = xmlDocument.CreateElement("Z_position");
+        Z_position.InnerText = Z.ToString();
+        question.AppendChild(Z_position);
+
+
         xmlDocument.AppendChild(root);
 
         #if UNITY_EDITOR
@@ -58,14 +71,14 @@ public class createXML : MonoBehaviour
         #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
             Debug.Log("IOS-ANDROID");
             xmlDocument.Save(Application.persistentDataPath + "/list_XML.xml");
-            provaText.text = "CARICATO SU ANDROID";
+            //provaText.text = "CARICATO SU ANDROID";
         #endif
 
         
 
     }
 
-    public void newXML(string q, string a, string r, string sc, string audio, string timeXML)
+    public void newXML(string q, string a, string r, string sc, string audio, string timeXML, string X, string Y, string Z)
     {
         XmlDocument xmlDocument = new XmlDocument();
         XmlElement root = xmlDocument.CreateElement("ListOfQuestion");
@@ -94,6 +107,18 @@ public class createXML : MonoBehaviour
         time.InnerText = timeXML;
         question.AppendChild(time);
 
+        XmlElement X_position = xmlDocument.CreateElement("X_position");
+        X_position.InnerText = X.ToString();
+        question.AppendChild(X_position);
+
+        XmlElement Y_position = xmlDocument.CreateElement("Y_position");
+        Y_position.InnerText = Y.ToString();
+        question.AppendChild(Y_position);
+
+        XmlElement Z_position = xmlDocument.CreateElement("Z_position");
+        Z_position.InnerText = Z.ToString();
+        question.AppendChild(Z_position);
+
         xmlDocument.AppendChild(root);
 
         #if UNITY_EDITOR
@@ -103,7 +128,7 @@ public class createXML : MonoBehaviour
 
         #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
             xmlDocument.Save(Application.persistentDataPath + "/list_XML.xml");
-             provaText.text = "CREATO SU ANDROID";
+             //provaText.text = "CREATO SU ANDROID";
         #endif
        
     }

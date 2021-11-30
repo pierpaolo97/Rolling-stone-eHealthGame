@@ -33,15 +33,20 @@ public class setQuestion : MonoBehaviour
     public Texture2D audioTexture;
     public GameObject transition;
 
-    void Start()
+    public List<GameObject> mondi;
+    public GameObject currentWorld;
+    
+
+    void Awake()
     {
 
         if (PlayerPrefs.GetInt("Level", 0)== 0)
         {
             transition.SetActive(true);
         }
-
-        Debug.Log(PlayerPrefs.GetString("LetteraLivello"));
+       
+        setCurrentWorld();
+        //Debug.Log(PlayerPrefs.GetString("LetteraLivello"));
         rend = domanda.transform.Find("Immagine").GetComponent<MeshRenderer>();
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();
         textCarta = carta.transform.Find("TextImg").GetComponent<Text>();
@@ -50,18 +55,17 @@ public class setQuestion : MonoBehaviour
         r1 = risposte.transform.Find("R1").transform.Find("textR1").GetComponent<TextMeshPro>();
         r2 = risposte.transform.Find("R2").transform.Find("textR2").GetComponent<TextMeshPro>();
 
-        //caricaDomande();
-        
-
+       
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
-            //Debug.Log("dentro if");
             caricaDomande();
         }
         
-
         SetCurrentQuestion();
     }
+
+   
+    
 
     public void caricaDomande()
     {
@@ -80,6 +84,22 @@ public class setQuestion : MonoBehaviour
         //Debug.Log("dall'altro codice");
     }
 
+    void setCurrentWorld()
+    {
+        int z = Random.Range(0, mondi.Count);
+        //Debug.Log(z);
+        if (z == PlayerPrefs.GetInt("CurrentWorld", -1))
+        {
+            setCurrentWorld();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("CurrentWorld", z);
+            currentWorld = mondi[z];
+            currentWorld.SetActive(true);
+        }
+        
+    }
 
     void SetCurrentQuestion()
     {

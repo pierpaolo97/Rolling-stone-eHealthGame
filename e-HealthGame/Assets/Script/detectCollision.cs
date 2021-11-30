@@ -15,7 +15,7 @@ public class detectCollision : MonoBehaviour
     public GameObject Player;
 
     [SerializeField]
-    private float timeBetweenQuestion = 1.3f;
+    private float timeBetweenQuestion = 0.4f;
 
     public int tocco = 0;
     public Text timeText;
@@ -38,12 +38,37 @@ public class detectCollision : MonoBehaviour
     public GameObject camera;
     public string rispostaData;
 
+    AsyncOperation async;
+    public GameObject portalAnimation;
+
     public string xmlTime;
+
+    public List<float> X;
+    public List<float> Y;
+    public List<float> Z;
+
+    public int risposto = 0;
+
+    public GameObject risposta1;
+    public GameObject risposta2;
+    private Vector3 targetPosition;
 
     private void Start()
     {
         scoreValue = this.GetComponent<Score>().score;
-        Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
+        Debug.LogWarning(PlayerPrefs.GetString("difficolta"));     
+        async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        async.allowSceneActivation = false;
+
+        if (risposta1.CompareTag("True"))
+        {
+            targetPosition = risposta1.transform.position;
+        }
+        else
+        {
+            targetPosition = risposta2.transform.position;
+        }
+        
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -53,19 +78,23 @@ public class detectCollision : MonoBehaviour
         {
             Debug.Log("Toccato");           
             this.GetComponent<Accelerometer>().speed = 2000f;
-            this.GetComponent<fromKeyboard>().speed = 2000f;
+            this.GetComponent<fromKeyboard>().speed = 500f;
             tocco = 1;
         }
 
         if (collision.transform.CompareTag("True"))
-        {          
+        {
+            risposto++;
+            camera.GetComponent<dissolve>().changeMaterial();
             rispostaEsatta(collision);
             prelevaInformazioni(collision, "CORRECT");
             checkLevel();
         }
 
         if (collision.transform.CompareTag("False"))
-        {            
+        {
+            risposto++;
+            camera.GetComponent<dissolve>().changeMaterial();
             rispostaSbagliata(collision);
             prelevaInformazioni(collision, "WRONG");
             checkLevel();
@@ -75,19 +104,28 @@ public class detectCollision : MonoBehaviour
   
     IEnumerator TransitionToNextQuestion()
     {
-        PlayerPrefs.SetInt("scoreLevel", scoreValue);
+        //portalAnimation.SetActive(true);
+        PlayerPrefs.SetInt("scoreLevel", scoreValue);        
         yield return new WaitForSeconds(timeBetweenQuestion);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        async.allowSceneActivation = true;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void Update()
     {
-        if (tocco > 0)
+        if (tocco > 0 && risposto==0)
         {
             timeStart += Time.deltaTime;
             timeText.text =  Mathf.Round(timeStart).ToString();
+            X.Add(targetPosition.x - this.transform.position.x);
+            Y.Add(targetPosition.y - this.transform.position.y);
+            Z.Add(targetPosition.z - this.transform.position.z);
         }
     }
+
+ 
+
+
 
     private void checkLevel()
     {
@@ -102,14 +140,14 @@ public class detectCollision : MonoBehaviour
         }
         else
         {
-            StartCoroutine(TransitionToNextQuestion());
+            StartCoroutine(TransitionToNextQuestion());         
         }
     }
 
 
     private void rispostaEsatta(Collision collision)
     {
-        Debug.Log(timeStart);
+        //Debug.Log(timeStart);
         xmlTime = Mathf.RoundToInt(timeStart).ToString();
         right.SetActive(true);
         this.transform.position = collision.transform.position;
@@ -119,7 +157,7 @@ public class detectCollision : MonoBehaviour
         scoreValue += scoreAnswer;
         this.GetComponent<Score>().scoreText.text = scoreValue.ToString();
         this.GetComponent<Accelerometer>().speed = 0f;
-        Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
+        //Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
         this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
     }
 
@@ -181,28 +219,36 @@ public class detectCollision : MonoBehaviour
             xmlAudio = "PAROLA";
         }
 
+        float[] arrayX = X.ToArray();
+        float[] arrayY = Y.ToArray();
+        float[] arrayZ = Z.ToArray();
+
+        string X_string = string.Join(" ", arrayX);
+        string Y_string = string.Join(" ", arrayY);
+        string Z_string = string.Join(" ", arrayZ);
+
 
         #if UNITY_EDITOR
             if (File.Exists(Application.dataPath + "/list_XML.xml"))
             {
                     Debug.Log("Esiste");
-                    camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
+                    camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score, xmlAudio, xmlTime, X_string, Y_string, Z_string);
             }
             else
             {
                     Debug.Log("Non esiste");
-                    camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
+                    camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score, xmlAudio, xmlTime, X_string, Y_string, Z_string);
             }
 #endif
 
 #if (UNITY_IOS || UNITY_ANDROID) && !UNITY_EDITOR
             if (File.Exists(Application.persistentDataPath + "/list_XML.xml"))
             {
-                camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
+                camera.GetComponent<createXML>().addDataToXML(parola, rispostaData, esito, score, xmlAudio, xmlTime, X_string, Y_string, Z_string);
             }
             else
             {
-                camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score, xmlAudio, xmlTime);
+                camera.GetComponent<createXML>().newXML(parola, rispostaData, esito, score, xmlAudio, xmlTime, X_string, Y_string, Z_string);
             }
 #endif
 

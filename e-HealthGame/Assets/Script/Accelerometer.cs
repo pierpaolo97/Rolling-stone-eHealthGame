@@ -42,7 +42,7 @@ public class Accelerometer : MonoBehaviour
                 if (x == 0)
                 {
                     startingAcceleration = Input.acceleration;
-                    accText.GetComponent<Text>().text = "Input acc." + startingAcceleration.ToString();
+                    //accText.GetComponent<Text>().text = "Input acc." + startingAcceleration.ToString();
                     //Debug.Log("Starting:" + startingAcceleration);
 
                     if (startingAcceleration.y > 0f)
@@ -62,7 +62,7 @@ public class Accelerometer : MonoBehaviour
                 {
                     theAcceleration.y = theAcceleration.y * 1.2f;
                 }
-                accText2.GetComponent<Text>().text = "Now ACC:" + theAcceleration.ToString();
+                //accText2.GetComponent<Text>().text = "Now ACC:" + theAcceleration.ToString();
 
                 //Debug.Log(theAcceleration);
                 Vector3 fixedAcceleration = theAcceleration - new Vector3(0f, startingAcceleration.y, 0f);
