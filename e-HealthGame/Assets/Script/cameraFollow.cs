@@ -15,6 +15,15 @@ public class cameraFollow : MonoBehaviour
         {
             transition.SetActive(true);
         }
+
+
+        Object[] allObjects = Object.FindObjectsOfType<GameObject>();
+
+        foreach (GameObject go in allObjects)
+        {
+            Debug.Log(go + " is an active object " + go.GetInstanceID());
+        }
+
     }
 
     void FixedUpdate()

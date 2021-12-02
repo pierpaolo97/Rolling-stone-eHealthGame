@@ -16,7 +16,8 @@ public class SoundManager : MonoBehaviour
         }
         else
         {
-            Load();        }
+            Load();
+        }
     }
 
     public void ChangeVolume()

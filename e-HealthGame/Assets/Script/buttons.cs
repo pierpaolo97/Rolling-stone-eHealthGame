@@ -11,13 +11,26 @@ public class buttons : MonoBehaviour
     public GameObject carta;
     public GameObject menuLevel;
     public GameObject pausemenu;
+    public GameObject Settings;
+    public GameObject MenuInfo;
     public GameObject pause;
     public GameObject camera;
+    public GameObject startclouds;
+    public GameObject score;
+    public GameObject time;
+
+    static public bool checktrans2 = true;
+
 
     public static bool GameIsPaused = false;
 
+
+
     public void Pause()
     {
+        carta.SetActive(false);
+        score.SetActive(false);
+        time.SetActive(false);
         pause.SetActive(false);
         pausemenu.SetActive(true);
         Time.timeScale = 0f;
@@ -26,6 +39,9 @@ public class buttons : MonoBehaviour
     public void Resume()
     {
         pausemenu.SetActive(false);
+        carta.SetActive(true);
+        score.SetActive(true);
+        time.SetActive(true);
         pause.SetActive(true);
         Time.timeScale = 1f;
     }
@@ -38,19 +54,30 @@ public class buttons : MonoBehaviour
     public void RestartTutorial()
     {
         PlayerPrefs.SetInt("Level", 0);
+        PlayerPrefs.GetInt("scoreLevel", 0);
+
         SceneManager.LoadScene("Tutorial");
     }
 
     public void StartGameMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        //Time.timeScale = 1f;
+        StartCoroutine(backHome());
+        Time.timeScale = 1f;
     }
 
-    public void settings()
+    public void difficulty()
     {
         carta.SetActive(false);
         gameover.SetActive(false);
         impostazioni.SetActive(true);
+    }
+
+    public void setting()
+    {
+        carta.SetActive(false);
+        gameover.SetActive(false);
+        Settings.SetActive(true);
     }
 
     public void back()
@@ -59,6 +86,14 @@ public class buttons : MonoBehaviour
         gameover.SetActive(true);
         impostazioni.SetActive(false);
         menuLevel.SetActive(false);
+    }
+
+
+    public void infoMenu()
+    {
+        carta.SetActive(false);
+        gameover.SetActive(false);
+        MenuInfo.SetActive(true);
     }
 
     public void changeLevel()
@@ -119,4 +154,11 @@ public class buttons : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    IEnumerator backHome()
+    {
+        startclouds.SetActive(true);
+        yield return new WaitForSeconds(1.4f);
+        SceneManager.LoadScene("MainMenu");
+        checktrans2 = false;
+    }
 }

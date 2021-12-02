@@ -64,9 +64,6 @@ public class setQuestion : MonoBehaviour
         SetCurrentQuestion();
     }
 
-   
-    
-
     public void caricaDomande()
     {
         switch (PlayerPrefs.GetString("LetteraLivello", "C"))
@@ -195,7 +192,5 @@ public class setQuestion : MonoBehaviour
         audioObject.SetActive(true);
         StartCoroutine(playAudio());
     }
-
-
 
 }

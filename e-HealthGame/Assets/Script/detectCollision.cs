@@ -11,12 +11,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class detectCollision : MonoBehaviour
 {
 
-    private Animation anim;
+    //public GameObject animCam;
     public GameObject Player;
-
     [SerializeField]
     private float timeBetweenQuestion = 0.4f;
-
     public int tocco = 0;
     public Text timeText;
     public float timeStart = 0;
@@ -55,6 +53,8 @@ public class detectCollision : MonoBehaviour
 
     private void Start()
     {
+        //camera.GetComponent<assolve>().changeMaterial();
+
         scoreValue = this.GetComponent<Score>().score;
         Debug.LogWarning(PlayerPrefs.GetString("difficolta"));     
         async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
@@ -85,6 +85,7 @@ public class detectCollision : MonoBehaviour
         if (collision.transform.CompareTag("True"))
         {
             risposto++;
+            //animCam.GetComponent<Animator>().Play("camera jump");
             camera.GetComponent<dissolve>().changeMaterial();
             rispostaEsatta(collision);
             prelevaInformazioni(collision, "CORRECT");
@@ -123,8 +124,6 @@ public class detectCollision : MonoBehaviour
         }
     }
 
- 
-
 
 
     private void checkLevel()
@@ -135,8 +134,8 @@ public class detectCollision : MonoBehaviour
 
         if (level == 2)
         {
+            StartCoroutine(attendiAnimazione());
             fineLivello();
-            StartCoroutine(attendiAnimazione());               
         }
         else
         {
@@ -171,7 +170,6 @@ public class detectCollision : MonoBehaviour
 
     private void fineLivello()
     {
-        menuLevel.SetActive(true);
         menuLevelText.text = PlayerPrefs.GetString("LetteraLivello", "C");
         menuScoreText.text = "SCORE: " + scoreValue.ToString();   
     }
@@ -179,8 +177,9 @@ public class detectCollision : MonoBehaviour
 
     IEnumerator attendiAnimazione()
     {
-        yield return new WaitForSeconds(1f);
-        menuLevel.GetComponent<Animator>().Play("bounce 0");
+        yield return new WaitForSeconds(1.5f);
+        menuLevel.SetActive(true);
+        menuLevel.GetComponent<Animator>().Play("bounce");
         carta.SetActive(false);
         cartasonoro.SetActive(false);
         right.SetActive(false);

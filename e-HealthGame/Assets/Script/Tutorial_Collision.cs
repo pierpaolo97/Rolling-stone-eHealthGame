@@ -276,7 +276,7 @@ public class Tutorial_Collision : MonoBehaviour
 
     private void rispostaEsatta(Collision collision)
     {
-        Debug.Log(timeStart);
+        //Debug.Log(timeStart);
         varText = RightText;
         StartCoroutine(ShowText(varText));
         Bird.SetActive(true);
@@ -288,7 +288,7 @@ public class Tutorial_Collision : MonoBehaviour
         scoreValue += scoreAnswer;
         this.GetComponent<Score>().scoreText.text = scoreValue.ToString();
         this.GetComponent<Accelerometer>().speed = 0f;
-        Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
+        //Player.GetComponent<Animator>().Play("correctAnswerAnimation 0");
         this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
     }
 
@@ -304,7 +304,7 @@ public class Tutorial_Collision : MonoBehaviour
 
     private void fineLivello()
     {
-        menuTutorial.SetActive(true);
+
         //tutorialLevelText.text = PlayerPrefs.GetString("LetteraLivello", "C");
         //tutorialScoreText.text = "SCORE: " + scoreValue.ToString();
     }
@@ -313,6 +313,7 @@ public class Tutorial_Collision : MonoBehaviour
     IEnumerator attendiAnimazione()
     {
         yield return new WaitForSeconds(3.7f);
+        menuTutorial.SetActive(true);
         menuTutorial.GetComponent<Animator>().Play("bounce");
         carta.SetActive(false);
         Tree.SetActive(false);

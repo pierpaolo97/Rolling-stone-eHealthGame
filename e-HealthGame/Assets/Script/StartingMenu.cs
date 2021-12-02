@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,9 +10,19 @@ public class StartingMenu : MonoBehaviour
     public GameObject StartingSettings;
     public GameObject pausemenu;
     public GameObject pause;
-
+    public GameObject bird;
+    public GameObject tree;
     public GameObject transition;
     public GameObject endtransition;
+
+    public void Start()
+    {
+
+        if (ButtonsTutorial.checktrans == false || buttons.checktrans2 == false)
+        {
+            endtransition.SetActive(true);
+        }
+    }
 
     public void levelC()
     {
@@ -64,13 +75,18 @@ public class StartingMenu : MonoBehaviour
     {
         PlayerPrefs.SetInt("scoreLevel", 0);
         PlayerPrefs.SetInt("Level", 0);
+        bird.SetActive(false);
+        tree.SetActive(false);
         StartCoroutine(loadGame());
+
     }
 
     public void RestartTutorial()
     {
         PlayerPrefs.SetInt("Level", 0);
+        PlayerPrefs.GetInt("scoreLevel", 0);
         StartCoroutine(loadTutorial());
+
     }
 
     public void Pause()
@@ -96,11 +112,11 @@ public class StartingMenu : MonoBehaviour
 
     IEnumerator loadTutorial()
     {
+        bird.SetActive(false);
+        tree.SetActive(false);
         transition.SetActive(true);
         yield return new WaitForSeconds(1.4f);
         SceneManager.LoadScene("Tutorial");
     }
-
-
 
 }
