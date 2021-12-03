@@ -74,12 +74,20 @@ public class detectCollision : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         savePosCollision = collision.transform.position;
+        //Debug.Log(collision.transform.name);
         if ( (collision.transform.name == "Plane" || collision.transform.name == "DOMANDA") && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
+
+            Debug.Log(collision.transform.name);
             Debug.Log("Toccato");           
             this.GetComponent<Accelerometer>().speed = 2000f;
             this.GetComponent<fromKeyboard>().speed = 500f;
             tocco = 1;
+            if (collision.transform.name == "DOMANDA")
+            {
+                collision.collider.enabled = false;
+                Debug.Log("TOLTO");
+            }
         }
 
         if (collision.transform.CompareTag("True"))

@@ -37,10 +37,21 @@ public class dissolve : MonoBehaviour
         Destroy(this.GetComponent<cameraFollow>());
         Vector3 cameraTargetPosition = new Vector3(0f, 15f, -10.84f);
         iTween.MoveTo(this.gameObject, cameraTargetPosition, 2f);
-        iTween.RotateTo(this.gameObject, iTween.Hash(
-            "rotation", new Vector3(180, 180, 180),
-            "time", 2f,
-            "easetype", iTween.EaseType.linear));
+        if (this.gameObject.transform.position.x > 0)
+        {
+            iTween.RotateTo(this.gameObject, iTween.Hash(
+                "rotation", new Vector3(0, -180, 0),
+                "time", 2f,
+                "easetype", iTween.EaseType.linear));
+        }
+        if (this.gameObject.transform.position.x < 0)
+        {
+            iTween.RotateTo(this.gameObject, iTween.Hash(
+                "rotation", new Vector3(0, 180, 0),
+                "time", 2f,
+                "easetype", iTween.EaseType.linear));
+        }
+
 
         risposta1.SetActive(false);
         risposta2.SetActive(false);

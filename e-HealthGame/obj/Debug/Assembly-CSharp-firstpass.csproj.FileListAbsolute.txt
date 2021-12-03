@@ -327,3 +327,4 @@ C:\Users\lucad\OneDrive\Desktop\Universita\E-Health Methods and Applications\Pro
 C:\Users\lucad\OneDrive\Desktop\Universita\E-Health Methods and Applications\Project\ProvaGit\Unity\e-HealthGame\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 C:\Users\lucad\OneDrive\Desktop\Universita\E-Health Methods and Applications\Project\ProvaGit\Unity\e-HealthGame\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\lucad\OneDrive\Desktop\Universita\E-Health Methods and Applications\Project\ProvaGit\Unity\e-HealthGame\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\lucad\OneDrive\Desktop\Universita\E-Health Methods and Applications\Project\ProvaGit\Unity\e-HealthGame\obj\Debug\Assembly-CSharp-firstpass.csprojAssemblyReference.cache

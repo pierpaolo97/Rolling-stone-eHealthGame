@@ -17,12 +17,12 @@ public class cameraFollow : MonoBehaviour
         }
 
 
-        Object[] allObjects = Object.FindObjectsOfType<GameObject>();
+        /*Object[] allObjects = Object.FindObjectsOfType<GameObject>();
 
         foreach (GameObject go in allObjects)
         {
             Debug.Log(go + " is an active object " + go.GetInstanceID());
-        }
+        }*/
 
     }
 
