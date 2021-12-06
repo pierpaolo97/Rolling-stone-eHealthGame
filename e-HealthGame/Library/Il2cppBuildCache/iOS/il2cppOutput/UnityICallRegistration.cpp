@@ -1550,6 +1550,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Material_set_shader();
 		Register_UnityEngine_Material_set_shader();
 
+		//UnityEngine.Shader UnityEngine.Material::get_shader()
+		void Register_UnityEngine_Material_get_shader();
+		Register_UnityEngine_Material_get_shader();
+
 		//UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 		void Register_UnityEngine_Material_GetTextureImpl();
 		Register_UnityEngine_Material_GetTextureImpl();

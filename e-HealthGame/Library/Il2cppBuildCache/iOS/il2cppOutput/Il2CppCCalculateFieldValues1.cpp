@@ -350,6 +350,8 @@ struct List_1_tB573D1DD7F85019D1433F20C305FE237B12BCA19;
 struct List_1_tE77A7FBBB9C59E79C9FB1BF36AA369E6A3986C3F;
 // System.Collections.Generic.List`1<UnityEngine.Rendering.Universal.ScriptableRendererFeature>
 struct List_1_tBCF0F141DE9E888F8E876CC61E2D1031229498E0;
+// System.Collections.Generic.List`1<UnityEngine.Shader>
+struct List_1_t8CE48391B2819864C1E81FA66A38401CDE875D76;
 // System.Collections.Generic.List`1<UnityEngine.Rendering.ShaderTagId>
 struct List_1_t65D18DB1CADB0D16AA99FF312F2511EBFE261C83;
 // System.Collections.Generic.List`1<UnityEngine.Experimental.Rendering.Universal.ShadowCaster2D>
@@ -52060,8 +52062,12 @@ public:
 	Shader_tB2355DC4F3CAF20B2F1AB5AABBF37C3555FFBC39 * ___shaderDissolve_8;
 	// System.Collections.Generic.List`1<UnityEngine.Material> assolve::allMaterials
 	List_1_t434825DCF3B4911FA61F9B2A235567430BDDD9F4 * ___allMaterials_9;
+	// System.Collections.Generic.List`1<UnityEngine.Shader> assolve::oldShadersList
+	List_1_t8CE48391B2819864C1E81FA66A38401CDE875D76 * ___oldShadersList_10;
 	// UnityEngine.Color assolve::colMat
-	Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  ___colMat_10;
+	Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  ___colMat_11;
+	// System.Int32 assolve::fatto
+	int32_t ___fatto_12;
 
 public:
 	inline static int32_t get_offset_of_dissolveMat_4() { return static_cast<int32_t>(offsetof(assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1, ___dissolveMat_4)); }
@@ -52116,12 +52122,29 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___allMaterials_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_colMat_10() { return static_cast<int32_t>(offsetof(assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1, ___colMat_10)); }
-	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  get_colMat_10() const { return ___colMat_10; }
-	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 * get_address_of_colMat_10() { return &___colMat_10; }
-	inline void set_colMat_10(Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  value)
+	inline static int32_t get_offset_of_oldShadersList_10() { return static_cast<int32_t>(offsetof(assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1, ___oldShadersList_10)); }
+	inline List_1_t8CE48391B2819864C1E81FA66A38401CDE875D76 * get_oldShadersList_10() const { return ___oldShadersList_10; }
+	inline List_1_t8CE48391B2819864C1E81FA66A38401CDE875D76 ** get_address_of_oldShadersList_10() { return &___oldShadersList_10; }
+	inline void set_oldShadersList_10(List_1_t8CE48391B2819864C1E81FA66A38401CDE875D76 * value)
 	{
-		___colMat_10 = value;
+		___oldShadersList_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___oldShadersList_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_colMat_11() { return static_cast<int32_t>(offsetof(assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1, ___colMat_11)); }
+	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  get_colMat_11() const { return ___colMat_11; }
+	inline Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659 * get_address_of_colMat_11() { return &___colMat_11; }
+	inline void set_colMat_11(Color_tF40DAF76C04FFECF3FE6024F85A294741C9CC659  value)
+	{
+		___colMat_11 = value;
+	}
+
+	inline static int32_t get_offset_of_fatto_12() { return static_cast<int32_t>(offsetof(assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1, ___fatto_12)); }
+	inline int32_t get_fatto_12() const { return ___fatto_12; }
+	inline int32_t* get_address_of_fatto_12() { return &___fatto_12; }
+	inline void set_fatto_12(int32_t value)
+	{
+		___fatto_12 = value;
 	}
 };
 
@@ -68320,7 +68343,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4284[53] =
 	Tutorial_Collision_tB043325A4FCC02A7B990093A200095FC8DB95822::get_offset_of_check_running_55(),
 	Tutorial_Collision_tB043325A4FCC02A7B990093A200095FC8DB95822::get_offset_of_varText_56(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4285[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4285[9] = 
 {
 	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_dissolveMat_4(),
 	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_t_5(),
@@ -68328,7 +68351,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4285[7] =
 	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_player_7(),
 	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_shaderDissolve_8(),
 	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_allMaterials_9(),
-	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_colMat_10(),
+	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_oldShadersList_10(),
+	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_colMat_11(),
+	assolve_t62762738CF1461ACB900E6C720C4B3EB202B20A1::get_offset_of_fatto_12(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4286[2] = 
 {

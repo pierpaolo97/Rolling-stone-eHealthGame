@@ -471,17 +471,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 87367689}
     m_Modifications:
-    - target: {fileID: 3322610556936036337, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
+    - target: {fileID: 3322610558164904040, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
+      propertyPath: m_Text
+      value: Ciao amico! Scegli una lettera e inzia a giocare!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3322610558164904040, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3322610558582657617, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
       propertyPath: m_Name
       value: Bird and text
-      objectReference: {fileID: 0}
-    - target: {fileID: 3322610558582657628, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3322610558582657630, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
       propertyPath: m_Pivot.x
@@ -567,9 +567,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3322610558582657628, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
-    - {fileID: 3322610556936036337, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
 --- !u!1 &85673849
 GameObject:
@@ -1176,6 +1174,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &298885303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3322610556912707206, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
+  m_PrefabInstance: {fileID: 80942024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &396477954
 GameObject:
   m_ObjectHideFlags: 0
@@ -4785,11 +4788,51 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3322610558582657617, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
   m_PrefabInstance: {fileID: 80942024}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1661198931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661198929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0709cb6086cd4d299e89cf9f0e76d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextStart: Ciao amico! Scegli una lettera e inzia a giocare!
+  Bird: {fileID: 1782317219}
+  delay: 0.1
+  TextComic: {fileID: 298885303}
 --- !u!224 &1661198932 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3322610558582657630, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
   m_PrefabInstance: {fileID: 80942024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1782317219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3322610556936036338, guid: 88c6449700b623545bf47889ca2ba275, type: 3}
+  m_PrefabInstance: {fileID: 80942024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1782317223
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782317219}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb504f185b441463eb41de5f3e317a1a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1932030504
 GameObject:
   m_ObjectHideFlags: 0

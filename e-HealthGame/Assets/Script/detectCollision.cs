@@ -53,7 +53,7 @@ public class detectCollision : MonoBehaviour
 
     private void Start()
     {
-        //camera.GetComponent<assolve>().changeMaterial();
+        camera.GetComponent<assolve>().changeMaterial();
 
         scoreValue = this.GetComponent<Score>().score;
         Debug.LogWarning(PlayerPrefs.GetString("difficolta"));     
