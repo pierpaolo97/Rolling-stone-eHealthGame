@@ -99,7 +99,7 @@ public class Accelerometer : MonoBehaviour
                 }
                 //accText2.GetComponent<Text>().text = "Now ACC:" + theAcceleration.ToString();
 
-                Debug.Log(theAcceleration);
+                //Debug.Log(theAcceleration);
                 Vector3 fixedAcceleration = theAcceleration - new Vector3(0f, startingAcceleration.y, 0f);
                 rigid.velocity = new Vector3(fixedAcceleration.x * Time.fixedDeltaTime * speed, rigid.velocity.y, fixedAcceleration.y * Time.fixedDeltaTime * speed);
             }

@@ -4,8 +4,24 @@ using UnityEngine;
 
 public class BackgroundSound : MonoBehaviour
 {
+    private static BackgroundSound instance = null;
+    private static BackgroundSound Instance
+    {
+        get{return instance; }
+    }
+
+
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
 }

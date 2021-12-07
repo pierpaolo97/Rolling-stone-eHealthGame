@@ -9,8 +9,9 @@ public class ButtonsTutorial : MonoBehaviour
     public GameObject pause;
     public GameObject startclouds;
     static public bool checktrans = true;
+    public GameObject bird;
 
-
+ 
     public void PlayGame()
     {
         SceneManager.LoadScene("SampleScene");
@@ -24,8 +25,9 @@ public class ButtonsTutorial : MonoBehaviour
     }
 
     public void StartGameMenu()
-    {
-        Time.timeScale = 1f;
+    {        
+        Debug.Log("ucciso");
+        Time.timeScale = 1f;      
         StartCoroutine(backHome());
     }
 
@@ -45,8 +47,11 @@ public class ButtonsTutorial : MonoBehaviour
 
     IEnumerator backHome()
     {
+        Destroy(bird.gameObject);
+        //bird.SetActive(false);
         startclouds.SetActive(true);
         yield return new WaitForSeconds(1.4f);
+        //Destroy(bird.gameObject);
         SceneManager.LoadScene("MainMenu");
         checktrans = false;
     }

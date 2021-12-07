@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Prova_.unity
+    guid: 796940aaf93857e41a9b17dbf08b06e4
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 02134782b3daccc4da17f96f948c7617

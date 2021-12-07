@@ -7,6 +7,7 @@ TagManager:
   - True
   - False
   - Bordi
+  - Musica
   layers:
   - Default
   - TransparentFX

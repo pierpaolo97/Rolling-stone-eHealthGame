@@ -16,39 +16,30 @@ public class SpeakBird : MonoBehaviour
     private void Start()
     {
 
-        StartCoroutine(ShowText(TextStart));
+        StartCoroutine(ShowText());
+        //Bird.GetComponent<Animator>().Play("IdleSpeak");
 
     }
 
     private void Update()
     {
-        SpeakTree();
+        //SpeakTree();
     }
 
-    IEnumerator ShowText(string textDaScrivere)
+    public IEnumerator ShowText()
     {
-        check_text = true;
-        for (int i = 0; i < textDaScrivere.Length; i++)
+        for (int i = 0; i < TextStart.Length; i++)
         {
-            currentText = textDaScrivere.Substring(0, i);
+            currentText = TextStart.Substring(0, i);
             //Debug.Log(Bird.transform.GetChild(0).transform.GetChild(1).name);
             TextComic.transform.GetChild(0).GetComponent<Text>().text = currentText;
             yield return new WaitForSeconds(delay);
         }
-        check_text = false;
+        //Bird.GetComponent<Animator>().Play("idleMute");
+        //Bird.GetComponent<Animator>().enabled = false;
     }
 
-    public void SpeakTree()
-    {
-        if (check_text == true )
-        {
-            Bird.GetComponent<Animator>().Play("IdleSpeak");
-        }
-        else if (check_text == false ) 
-        {
-            Bird.GetComponent<Animator>().Play("idleMute");
-        }
-
-    }
+    
+ 
 
 }

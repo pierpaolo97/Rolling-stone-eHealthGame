@@ -53,12 +53,16 @@ public class detectCollision : MonoBehaviour
 
     private void Start()
     {
-        camera.GetComponent<assolve>().changeMaterial();
+        //camera.GetComponent<assolve>().changeMaterial();
 
         scoreValue = this.GetComponent<Score>().score;
-        Debug.LogWarning(PlayerPrefs.GetString("difficolta"));     
-        async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        async.allowSceneActivation = false;
+        Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
+
+        /*if (PlayerPrefs.GetInt("Level", -1) >0)
+        {
+            async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            async.allowSceneActivation = false;
+        }*/
 
         if (risposta1.CompareTag("True"))
         {
@@ -77,17 +81,20 @@ public class detectCollision : MonoBehaviour
         //Debug.Log(collision.transform.name);
         if ( (collision.transform.name == "Plane" || collision.transform.name == "DOMANDA") && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
-
+            pause.SetActive(true);
             Debug.Log(collision.transform.name);
             Debug.Log("Toccato");           
             this.GetComponent<Accelerometer>().speed = 2000f;
             this.GetComponent<fromKeyboard>().speed = 500f;
+            async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            async.allowSceneActivation = false;
             tocco = 1;
             if (collision.transform.name == "DOMANDA")
             {
                 collision.collider.enabled = false;
                 Debug.Log("TOLTO");
             }
+
         }
 
         if (collision.transform.CompareTag("True"))
@@ -116,8 +123,16 @@ public class detectCollision : MonoBehaviour
         //portalAnimation.SetActive(true);
         PlayerPrefs.SetInt("scoreLevel", scoreValue);        
         yield return new WaitForSeconds(timeBetweenQuestion);
-        async.allowSceneActivation = true;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        /*if (PlayerPrefs.GetInt("Level", -1) > 1)
+        {*/
+            async.allowSceneActivation = true;
+            /*Debug.Log("precaricato");
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("carica ora");
+        }*/
     }
 
     private void Update()
@@ -149,6 +164,9 @@ public class detectCollision : MonoBehaviour
         {
             StartCoroutine(TransitionToNextQuestion());         
         }
+        PlayerPrefs.SetInt("scoreLevel", scoreValue);
+        this.GetComponent<HighScore>().checkHighScore(PlayerPrefs.GetInt("scoreLevel"));
+
     }
 
 

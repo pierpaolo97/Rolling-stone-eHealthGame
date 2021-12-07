@@ -14,6 +14,9 @@ public class StartingMenu : MonoBehaviour
     public GameObject tree;
     public GameObject transition;
     public GameObject endtransition;
+    AsyncOperation async;
+    AsyncOperation asyncTutorial;
+    int caricato = 0;
 
     public void Start()
     {
@@ -22,6 +25,17 @@ public class StartingMenu : MonoBehaviour
         {
             endtransition.SetActive(true);
         }
+    }
+
+    public void Update()
+    { 
+        /*print("update");
+        if (caricato == 0)
+        {
+            async = SceneManager.LoadSceneAsync("SampleScene");
+            async.allowSceneActivation = false;
+            caricato = 1;      
+        }*/
     }
 
     public void levelC()
@@ -75,8 +89,13 @@ public class StartingMenu : MonoBehaviour
     {
         PlayerPrefs.SetInt("scoreLevel", 0);
         PlayerPrefs.SetInt("Level", 0);
+        //Destroy(bird.gameObject);
+        //StopCoroutine(bird.GetComponent<SpeakBird>().ShowText());
         bird.SetActive(false);
-        tree.SetActive(false);
+        tree.SetActive(false);    
+        //async.allowSceneActivation = true;
+        async = SceneManager.LoadSceneAsync("SampleScene");
+        async.allowSceneActivation = false;
         StartCoroutine(loadGame());
 
     }
@@ -85,8 +104,9 @@ public class StartingMenu : MonoBehaviour
     {
         PlayerPrefs.SetInt("Level", 0);
         PlayerPrefs.GetInt("scoreLevel", 0);
+        asyncTutorial = SceneManager.LoadSceneAsync("Tutorial");
+        asyncTutorial.allowSceneActivation = false;
         StartCoroutine(loadTutorial());
-
     }
 
     public void Pause()
@@ -107,16 +127,18 @@ public class StartingMenu : MonoBehaviour
     {
         transition.SetActive(true);
         yield return new WaitForSeconds(1.4f);
-        SceneManager.LoadScene("SampleScene");
+        async.allowSceneActivation = true;
+        //SceneManager.LoadScene("SampleScene");
     }
 
     IEnumerator loadTutorial()
     {
-        bird.SetActive(false);
-        tree.SetActive(false);
+        //bird.SetActive(false);
+        //tree.SetActive(false);
         transition.SetActive(true);
         yield return new WaitForSeconds(1.4f);
-        SceneManager.LoadScene("Tutorial");
+        asyncTutorial.allowSceneActivation = true;
+        //SceneManager.LoadScene("Tutorial");
     }
 
 }

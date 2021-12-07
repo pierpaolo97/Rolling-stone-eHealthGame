@@ -18,6 +18,7 @@ public class buttons : MonoBehaviour
     public GameObject startclouds;
     public GameObject score;
     public GameObject time;
+    public GameObject highscores;
 
     static public bool checktrans2 = true;
 
@@ -88,6 +89,14 @@ public class buttons : MonoBehaviour
         menuLevel.SetActive(false);
     }
 
+    public void backHighScores()
+    {
+        highscores.SetActive(false);
+        gameover.SetActive(true);
+        impostazioni.SetActive(false);
+        menuLevel.SetActive(false);
+    }
+
 
     public void infoMenu()
     {
@@ -95,6 +104,16 @@ public class buttons : MonoBehaviour
         gameover.SetActive(false);
         MenuInfo.SetActive(true);
     }
+
+    public void displayHigh()
+    {
+        carta.SetActive(false);
+        gameover.SetActive(false);
+        highscores.SetActive(true);
+    }
+
+
+
 
     public void changeLevel()
     {

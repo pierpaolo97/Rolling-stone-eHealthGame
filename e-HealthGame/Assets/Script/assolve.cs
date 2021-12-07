@@ -30,7 +30,7 @@ public class assolve : MonoBehaviour
                 //dissolveMat[i].SetFloat("Dissolve_Value", Mathf.Lerp(0f, 1f, t));
                 allMaterials[i].SetFloat("Dissolve_Value", Mathf.Lerp(1f, 0f, t));
                 t += 0.008f * Time.fixedDeltaTime;
-                Debug.Log("Nel fixed update");
+                //Debug.Log("Nel fixed update");
             }
 
         }
@@ -49,9 +49,9 @@ public class assolve : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Level", 0) > 0)
         {
+            Debug.Log((PlayerPrefs.GetInt("Level", 0)));
             changeMaterial();
         }
-
     }
 
 
