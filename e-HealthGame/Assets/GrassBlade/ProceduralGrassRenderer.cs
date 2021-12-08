@@ -28,6 +28,8 @@ using UnityEngine.Rendering;
 [ExecuteInEditMode]
 public class ProceduralGrassRenderer : MonoBehaviour {
     // A class to hold grass settings
+
+
     [System.Serializable]
     public class GrassSettings {
         [Tooltip("The maximim number of grass segments. Note this is also bounded by the max value set in the compute shader")]
@@ -65,11 +67,12 @@ public class ProceduralGrassRenderer : MonoBehaviour {
     [Tooltip("A mesh to create grass from. A blade sprouts from the center of every triangle")]
     [SerializeField] private Mesh sourceMesh = default;
     [Tooltip("The grass geometry creating compute shader")]
-    [SerializeField] private ComputeShader grassComputeShader = default;
+    [SerializeField] public ComputeShader grassComputeShader = default;
     [Tooltip("The material to render the grass mesh")]
-    [SerializeField] private Material material = default;
+    [SerializeField] public Material material = default;
 
     [SerializeField] private GrassSettings grassSettings = default;
+    //public GrassSettings grassSettings;
 
     // The structure to send to the compute shader
     // This layout kind assures that the data is laid out sequentially
@@ -89,8 +92,8 @@ public class ProceduralGrassRenderer : MonoBehaviour {
     // A compute buffer to hold indirect draw arguments
     private ComputeBuffer argsBuffer;
     // We have to instantiate the shaders so each points to their unique compute buffers
-    private ComputeShader instantiatedGrassComputeShader;
-    private Material instantiatedMaterial;
+    public ComputeShader instantiatedGrassComputeShader;
+    public Material instantiatedMaterial;
     // The id of the kernel in the grass compute shader
     private int idGrassKernel;
     // The x dispatch size for the grass compute shader

@@ -35,6 +35,7 @@ public class setQuestion : MonoBehaviour
 
     public List<GameObject> mondi;
     public GameObject currentWorld;
+    public List<int> validChoices;
     
 
     void Awake()
@@ -83,19 +84,23 @@ public class setQuestion : MonoBehaviour
 
     void setCurrentWorld()
     {
-        int z = Random.Range(0, mondi.Count);
-        //Debug.Log(z);
-        if (z == PlayerPrefs.GetInt("CurrentWorld", -1))
+        //Debug.Log("Mondo precedente" + PlayerPrefs.GetInt("CurrentWorld", -1).ToString());
+        for (int i = 0; i < mondi.Count; i++)
         {
-            setCurrentWorld();
+            if (i != PlayerPrefs.GetInt("CurrentWorld", -1))
+            {
+                validChoices.Add(i);
+                //Debug.Log("ciclo" + i.ToString());
+            }
         }
-        else
-        {
-            PlayerPrefs.SetInt("CurrentWorld", z);
-            currentWorld = mondi[z];
-            currentWorld.SetActive(true);
-        }
-        
+
+        int z = validChoices[Random.Range(0, validChoices.Count)];
+        //Debug.Log("Mondo scelto" + z.ToString());
+
+        PlayerPrefs.SetInt("CurrentWorld", z);
+        currentWorld = mondi[z];
+        Instantiate(currentWorld, new Vector3(0.0001220703f, 6.103516e-05f, 0f), transform.rotation);
+        //currentWorld.SetActive(true);
     }
 
     void SetCurrentQuestion()

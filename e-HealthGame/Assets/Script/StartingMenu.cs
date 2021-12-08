@@ -16,7 +16,7 @@ public class StartingMenu : MonoBehaviour
     public GameObject endtransition;
     AsyncOperation async;
     AsyncOperation asyncTutorial;
-    int caricato = 0;
+    //int caricato = 0;
 
     public void Start()
     {

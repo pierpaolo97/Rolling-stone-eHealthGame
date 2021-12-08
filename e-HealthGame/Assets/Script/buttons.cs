@@ -14,7 +14,7 @@ public class buttons : MonoBehaviour
     public GameObject Settings;
     public GameObject MenuInfo;
     public GameObject pause;
-    public GameObject camera;
+    public GameObject camera_;
     public GameObject startclouds;
     public GameObject score;
     public GameObject time;
@@ -135,19 +135,19 @@ public class buttons : MonoBehaviour
     public void levelC()
     {
         PlayerPrefs.SetString("LetteraLivello", "C");
-        camera.GetComponent<setQuestion>().caricaDomande();
+        camera_.GetComponent<setQuestion>().caricaDomande();
     }
 
     public void levelG()
     {
         PlayerPrefs.SetString("LetteraLivello", "G");
-        camera.GetComponent<setQuestion>().caricaDomande();
+        camera_.GetComponent<setQuestion>().caricaDomande();
     }
 
     public void levelSC()
     {
         PlayerPrefs.SetString("LetteraLivello", "SC");
-        camera.GetComponent<setQuestion>().caricaDomande();
+        camera_.GetComponent<setQuestion>().caricaDomande();
     }
 
     public void easy()

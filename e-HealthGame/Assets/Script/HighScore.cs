@@ -10,8 +10,8 @@ public class HighScore : MonoBehaviour
         string diff = PlayerPrefs.GetString("difficolta", "Easy");
         string lettera = PlayerPrefs.GetString("LetteraLivello", "C");
 
-        Debug.Log(diff);
-        Debug.Log(lettera);
+        //Debug.Log(diff);
+        //Debug.Log(lettera);
 
         switch (diff)
         {

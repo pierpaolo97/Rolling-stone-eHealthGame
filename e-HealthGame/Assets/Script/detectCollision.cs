@@ -56,7 +56,7 @@ public class detectCollision : MonoBehaviour
         //camera.GetComponent<assolve>().changeMaterial();
 
         scoreValue = this.GetComponent<Score>().score;
-        Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
+        //Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
 
         /*if (PlayerPrefs.GetInt("Level", -1) >0)
         {
@@ -82,8 +82,8 @@ public class detectCollision : MonoBehaviour
         if ( (collision.transform.name == "Plane" || collision.transform.name == "DOMANDA") && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
             pause.SetActive(true);
-            Debug.Log(collision.transform.name);
-            Debug.Log("Toccato");           
+            //Debug.Log(collision.transform.name);
+            //Debug.Log("Toccato");           
             this.GetComponent<Accelerometer>().speed = 2000f;
             this.GetComponent<fromKeyboard>().speed = 500f;
             async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
@@ -92,7 +92,7 @@ public class detectCollision : MonoBehaviour
             if (collision.transform.name == "DOMANDA")
             {
                 collision.collider.enabled = false;
-                Debug.Log("TOLTO");
+                //Debug.Log("TOLTO");
             }
 
         }

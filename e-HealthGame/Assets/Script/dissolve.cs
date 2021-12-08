@@ -12,17 +12,16 @@ public class dissolve : MonoBehaviour
     public List<Material> allMaterials;
     public GameObject risposta1;
     public GameObject risposta2;
-    public GameObject fuoco1;
-    public GameObject fuoco2;
-    public GameObject GrassBlade;
-    public GameObject GrassBlade2;
+    GameObject fuoco1;
+    GameObject GrassBlade;
+    GameObject GrassBlade2;
     private Color colMat;
-
+    int fatto = 0;
 
 
     public void FixedUpdate()
     {      
-        if (x > 0)
+        if (x > 0 && fatto==0)
         {    
             for (int i = 0; i < allMaterials.Count; i++)
             {
@@ -30,7 +29,44 @@ public class dissolve : MonoBehaviour
                 allMaterials[i].SetFloat("Dissolve_Value", Mathf.Lerp(0f, 1f, t));
                 t += 0.008f * Time.fixedDeltaTime;
             }
+
+            if (GrassBlade != null)
+            {
+                int n_child = GrassBlade.transform.childCount;
+                for (int i = 0; i < n_child; i++)
+                {
+                    GameObject child = GrassBlade.transform.GetChild(i).gameObject;
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeWidth", Mathf.Lerp(0.5f, 0f, t));
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeHeight", Mathf.Lerp(2f, 0f, t));
+                }
+            }
+
+            if (GrassBlade2 != null)
+            {
+                int n_child = GrassBlade2.transform.childCount;
+                for (int i = 0; i < n_child; i++)
+                {
+                    GameObject child = GrassBlade2.transform.GetChild(i).gameObject;
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeWidth", Mathf.Lerp(0.5f, 0f, t));
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeHeight", Mathf.Lerp(2f, 0f, t));
+                }
+            }
         }
+
+        if (t > 1 && fatto==0)
+        {
+            fatto = 1;
+
+            if (GrassBlade != null)
+            {
+                GrassBlade.SetActive(false);
+            }
+            if (GrassBlade2 != null)
+            {
+                GrassBlade2.SetActive(false);
+            }
+        }
+
     }
 
 
@@ -58,24 +94,25 @@ public class dissolve : MonoBehaviour
         risposta1.SetActive(false);
         risposta2.SetActive(false);
 
-        if (fuoco1.activeSelf)
+        fuoco1 = GameObject.Find("Fire");
+
+        if(fuoco1 != null)
         {
             fuoco1.SetActive(false);
         }
 
-        if (fuoco2.activeSelf)
-        {
-            fuoco2.SetActive(false);
-        }
-        if (GrassBlade.activeSelf)
+        GrassBlade = GameObject.Find("Grassblade");
+        /*if (GrassBlade != null)
         {
             GrassBlade.SetActive(false);
-        }
+        }*/
 
-        if (GrassBlade2.activeSelf)
+        GrassBlade2 = GameObject.Find("Grassblade Giostre");
+        /*if (GrassBlade2 != null)
         {
             GrassBlade2.SetActive(false);
-        }
+        }*/
+
 
         GameObject[] allObjects = Object.FindObjectsOfType<GameObject>();
         foreach (GameObject go in allObjects)
@@ -96,7 +133,7 @@ public class dissolve : MonoBehaviour
                         }
                         else
                         {
-                            Debug.LogWarning("NO COLOR" + mat.name);
+                            //Debug.LogWarning("NO COLOR" + mat.name);
                             mat.shader = shaderDissolve;
                             mat.SetColor("_Albedo", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
                         }

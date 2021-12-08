@@ -18,7 +18,10 @@ public class assolve : MonoBehaviour
     public GameObject fuoco2;*/
     private Color colMat;
     int fatto = 0;
+    public GameObject GrassBlade;
+    public GameObject GrassBlade2;
 
+    ProceduralGrassRenderer prod;
 
 
     public void FixedUpdate()
@@ -29,17 +32,36 @@ public class assolve : MonoBehaviour
             {
                 //dissolveMat[i].SetFloat("Dissolve_Value", Mathf.Lerp(0f, 1f, t));
                 allMaterials[i].SetFloat("Dissolve_Value", Mathf.Lerp(1f, 0f, t));
-                t += 0.008f * Time.fixedDeltaTime;
+                t += 0.011f * Time.fixedDeltaTime;
                 //Debug.Log("Nel fixed update");
             }
+            if (GrassBlade != null)
+            {
+                int n_child = GrassBlade.transform.childCount;
+                for (int i = 0; i < n_child; i++)
+                {
+                    GameObject child = GrassBlade.transform.GetChild(i).gameObject;
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeWidth", Mathf.Lerp(0f, 0.5f, t));
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeHeight", Mathf.Lerp(0f, 2f, t));
+                }
+            }
 
+            if (GrassBlade2 != null)
+            {
+                int n_child = GrassBlade2.transform.childCount;
+                for (int i = 0; i < n_child; i++)
+                {
+                    GameObject child = GrassBlade2.transform.GetChild(i).gameObject;
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeWidth", Mathf.Lerp(0f, 0.5f, t));
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeHeight", Mathf.Lerp(0f, 2f, t));
+                }
+            }
         }
 
         if (t >= 1f && fatto == 0)
         {
             fatto = 1;
             reChange();
-
         }
 
 
@@ -47,11 +69,39 @@ public class assolve : MonoBehaviour
 
     private void Awake()
     {
+        GrassBlade = GameObject.Find("Grassblade");
+        GrassBlade2 = GameObject.Find("Grassblade Giostre");
+
         if (PlayerPrefs.GetInt("Level", 0) > 0)
         {
-            Debug.Log((PlayerPrefs.GetInt("Level", 0)));
             changeMaterial();
         }
+        else
+        {
+            if (GrassBlade != null)
+            {
+                int n_child = GrassBlade.transform.childCount;
+                for (int i = 0; i < n_child; i++)
+                {
+                    GameObject child = GrassBlade.transform.GetChild(i).gameObject;
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeWidth", 0.5f);
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeHeight", 2f);
+                }
+            }
+            if (GrassBlade2 != null)
+            {
+                int n_child = GrassBlade2.transform.childCount;
+                for (int i = 0; i < n_child; i++)
+                {
+                    GameObject child = GrassBlade2.transform.GetChild(i).gameObject;
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeWidth", 0.5f);
+                    child.GetComponent<ProceduralGrassRenderer>().instantiatedGrassComputeShader.SetFloat("_BladeHeight", 2f);
+                }
+            }
+        }
+
+
+        
     }
 
 
@@ -118,7 +168,12 @@ public class assolve : MonoBehaviour
             }
         }
         x++;
+
+
+
     }
+
+
 
 
 }
