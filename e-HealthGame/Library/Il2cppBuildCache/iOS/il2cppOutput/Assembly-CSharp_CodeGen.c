@@ -424,69 +424,73 @@ extern void U3CattendiAnimazioneU3Ed__38_System_Collections_Generic_IEnumeratorU
 extern void U3CattendiAnimazioneU3Ed__38_System_Collections_IEnumerator_Reset_mF407F972D54C6FC1B24137CA54647B080DBDF803 (void);
 // 0x000000CE System.Object detectCollision/<attendiAnimazione>d__38::System.Collections.IEnumerator.get_Current()
 extern void U3CattendiAnimazioneU3Ed__38_System_Collections_IEnumerator_get_Current_m744FEC5745A664CC5C3B8E2EAA1E5603C7370876 (void);
-// 0x000000CF System.Void displayHighScores::C()
+// 0x000000CF System.Void diplaypause::Start()
+extern void diplaypause_Start_mD362775845485EE5639DD5D43BEB1350AB34C491 (void);
+// 0x000000D0 System.Void diplaypause::.ctor()
+extern void diplaypause__ctor_m181E336722EA345B09C1E25AC721394B21E67F6B (void);
+// 0x000000D1 System.Void displayHighScores::C()
 extern void displayHighScores_C_mD3F6686027860B3D88D1E925C4A8DB91B167E947 (void);
-// 0x000000D0 System.Void displayHighScores::G()
+// 0x000000D2 System.Void displayHighScores::G()
 extern void displayHighScores_G_mD9910DCD7D126652843CFE1F5ACB087A78746F97 (void);
-// 0x000000D1 System.Void displayHighScores::SC()
+// 0x000000D3 System.Void displayHighScores::SC()
 extern void displayHighScores_SC_m9E4AA76112032B6B3DF17BDE2F6380D99D874021 (void);
-// 0x000000D2 System.Void displayHighScores::.ctor()
+// 0x000000D4 System.Void displayHighScores::.ctor()
 extern void displayHighScores__ctor_m5B4E991EF236C6E54758F83F657B86DD867361F1 (void);
-// 0x000000D3 System.Void dissolve::FixedUpdate()
+// 0x000000D5 System.Void dissolve::FixedUpdate()
 extern void dissolve_FixedUpdate_mD5D424A1E1328077A7E61D56500EF3797CDBDB0C (void);
-// 0x000000D4 System.Void dissolve::changeMaterial()
+// 0x000000D6 System.Void dissolve::changeMaterial()
 extern void dissolve_changeMaterial_m1A19BCFD2B54214E1BB70CFFF52C889AB8350E41 (void);
-// 0x000000D5 System.Void dissolve::.ctor()
+// 0x000000D7 System.Void dissolve::.ctor()
 extern void dissolve__ctor_mFE2E34658765F20DE80456C6B6C5ABB3E399B0D0 (void);
-// 0x000000D6 System.Void fromKeyboard::Start()
+// 0x000000D8 System.Void fromKeyboard::Start()
 extern void fromKeyboard_Start_m3DC123255F368AFD420FFC55329B423544B721BD (void);
-// 0x000000D7 System.Void fromKeyboard::Update()
+// 0x000000D9 System.Void fromKeyboard::Update()
 extern void fromKeyboard_Update_m168D5F08975211AAB74731EE3D7E92AD3D271B0A (void);
-// 0x000000D8 System.Void fromKeyboard::.ctor()
+// 0x000000DA System.Void fromKeyboard::.ctor()
 extern void fromKeyboard__ctor_mC545C2CD8126DAE98FC91C18F6A70C786F06D314 (void);
-// 0x000000D9 System.Void neverSleep::Awake()
+// 0x000000DB System.Void neverSleep::Awake()
 extern void neverSleep_Awake_m944D0E745BC5D6E2596FEB221B26AC97B8795AB9 (void);
-// 0x000000DA System.Void neverSleep::.ctor()
+// 0x000000DC System.Void neverSleep::.ctor()
 extern void neverSleep__ctor_m6BD5197DDF0967204E035C9EA830DCB26FBCEAEF (void);
-// 0x000000DB System.Void quit::OnApplicationQuit()
+// 0x000000DD System.Void quit::OnApplicationQuit()
 extern void quit_OnApplicationQuit_mE59DD4C9A8F1FE8985488892DB9B7B17BA11F250 (void);
-// 0x000000DC System.Void quit::OnBeforeSceneLoadRuntimeMethod()
+// 0x000000DE System.Void quit::OnBeforeSceneLoadRuntimeMethod()
 extern void quit_OnBeforeSceneLoadRuntimeMethod_mFF154A0559C7640B49F8B6B398925DC0C8887493 (void);
-// 0x000000DD System.Void quit::.ctor()
+// 0x000000DF System.Void quit::.ctor()
 extern void quit__ctor_m209CE3CFCDE0E6BD1617F341A985A668A0948EC0 (void);
-// 0x000000DE System.Void setQuestion::Awake()
+// 0x000000E0 System.Void setQuestion::Awake()
 extern void setQuestion_Awake_mBA6D8A531F4ADC749DD3D89D4E09134DA077ACCA (void);
-// 0x000000DF System.Void setQuestion::caricaDomande()
+// 0x000000E1 System.Void setQuestion::caricaDomande()
 extern void setQuestion_caricaDomande_m3193D5366973B487D45EE9F3BDFDF6918783D437 (void);
-// 0x000000E0 System.Void setQuestion::setCurrentWorld()
+// 0x000000E2 System.Void setQuestion::setCurrentWorld()
 extern void setQuestion_setCurrentWorld_mCBC0392D2EEEC0F5CCAF54FF2DF8A8357C3CDE64 (void);
-// 0x000000E1 System.Void setQuestion::SetCurrentQuestion()
+// 0x000000E3 System.Void setQuestion::SetCurrentQuestion()
 extern void setQuestion_SetCurrentQuestion_mE6A90B1848490B3F2E47A6F9613958C637BAAA15 (void);
-// 0x000000E2 System.Collections.IEnumerator setQuestion::playAudio()
+// 0x000000E4 System.Collections.IEnumerator setQuestion::playAudio()
 extern void setQuestion_playAudio_m1EC32934A592A02B3BC5A727D43E3F3DF75F4104 (void);
-// 0x000000E3 System.Void setQuestion::parola()
+// 0x000000E5 System.Void setQuestion::parola()
 extern void setQuestion_parola_m4CCCB4C5A1A60E5EE2FAEBC2656B74FB6AACD6CD (void);
-// 0x000000E4 System.Void setQuestion::audioParola()
+// 0x000000E6 System.Void setQuestion::audioParola()
 extern void setQuestion_audioParola_m2D75E2E6711882CA2697495A567C173C1581730C (void);
-// 0x000000E5 System.Void setQuestion::.ctor()
+// 0x000000E7 System.Void setQuestion::.ctor()
 extern void setQuestion__ctor_mEFE83DA547B690CA0DE6E3E0ED0C8EEDBCE71328 (void);
-// 0x000000E6 System.Void setQuestion/<playAudio>d__25::.ctor(System.Int32)
+// 0x000000E8 System.Void setQuestion/<playAudio>d__25::.ctor(System.Int32)
 extern void U3CplayAudioU3Ed__25__ctor_m5741BE5BA93B90C314B91BC990A88BAD555C6CEC (void);
-// 0x000000E7 System.Void setQuestion/<playAudio>d__25::System.IDisposable.Dispose()
+// 0x000000E9 System.Void setQuestion/<playAudio>d__25::System.IDisposable.Dispose()
 extern void U3CplayAudioU3Ed__25_System_IDisposable_Dispose_m1002A3BE88417CFB4DED1DD903D027E605FC8E03 (void);
-// 0x000000E8 System.Boolean setQuestion/<playAudio>d__25::MoveNext()
+// 0x000000EA System.Boolean setQuestion/<playAudio>d__25::MoveNext()
 extern void U3CplayAudioU3Ed__25_MoveNext_m4F466B1AA118DF3F9C3EFA37F5251093D71253D5 (void);
-// 0x000000E9 System.Object setQuestion/<playAudio>d__25::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000EB System.Object setQuestion/<playAudio>d__25::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CplayAudioU3Ed__25_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m98375037E83CEB665B63BC9C2AC713492EEFA5D1 (void);
-// 0x000000EA System.Void setQuestion/<playAudio>d__25::System.Collections.IEnumerator.Reset()
+// 0x000000EC System.Void setQuestion/<playAudio>d__25::System.Collections.IEnumerator.Reset()
 extern void U3CplayAudioU3Ed__25_System_Collections_IEnumerator_Reset_m81EAB34C126B0BAE3C7F56F33EE9692B91A55E30 (void);
-// 0x000000EB System.Object setQuestion/<playAudio>d__25::System.Collections.IEnumerator.get_Current()
+// 0x000000ED System.Object setQuestion/<playAudio>d__25::System.Collections.IEnumerator.get_Current()
 extern void U3CplayAudioU3Ed__25_System_Collections_IEnumerator_get_Current_mEF0BA65AD5A83427ED3510F5ED7169A724070BB7 (void);
-// 0x000000EC System.Void provaStart::Play()
+// 0x000000EE System.Void provaStart::Play()
 extern void provaStart_Play_m9B028B610A6EC7D7605BBA60B573606AA35DE589 (void);
-// 0x000000ED System.Void provaStart::.ctor()
+// 0x000000EF System.Void provaStart::.ctor()
 extern void provaStart__ctor_mA2DF81A32BAE2C2E39993E28C0F0F42BE50B73DE (void);
-static Il2CppMethodPointer s_methodPointers[237] = 
+static Il2CppMethodPointer s_methodPointers[239] = 
 {
 	ProceduralGrassRenderer_OnEnable_mD049531EC5F472995ABBECA09684D0847FB3A3F1,
 	ProceduralGrassRenderer_OnDisable_m59ED3105F178F7146BA8C625EBD589D813939D53,
@@ -694,6 +698,8 @@ static Il2CppMethodPointer s_methodPointers[237] =
 	U3CattendiAnimazioneU3Ed__38_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9F75B4974255E5F5570C5119767F9101AC2EF0E7,
 	U3CattendiAnimazioneU3Ed__38_System_Collections_IEnumerator_Reset_mF407F972D54C6FC1B24137CA54647B080DBDF803,
 	U3CattendiAnimazioneU3Ed__38_System_Collections_IEnumerator_get_Current_m744FEC5745A664CC5C3B8E2EAA1E5603C7370876,
+	diplaypause_Start_mD362775845485EE5639DD5D43BEB1350AB34C491,
+	diplaypause__ctor_m181E336722EA345B09C1E25AC721394B21E67F6B,
 	displayHighScores_C_mD3F6686027860B3D88D1E925C4A8DB91B167E947,
 	displayHighScores_G_mD9910DCD7D126652843CFE1F5ACB087A78746F97,
 	displayHighScores_SC_m9E4AA76112032B6B3DF17BDE2F6380D99D874021,
@@ -726,7 +732,7 @@ static Il2CppMethodPointer s_methodPointers[237] =
 	provaStart_Play_m9B028B610A6EC7D7605BBA60B573606AA35DE589,
 	provaStart__ctor_mA2DF81A32BAE2C2E39993E28C0F0F42BE50B73DE,
 };
-static const int32_t s_InvokerIndices[237] = 
+static const int32_t s_InvokerIndices[239] = 
 {
 	2815,
 	2815,
@@ -947,6 +953,8 @@ static const int32_t s_InvokerIndices[237] =
 	2815,
 	2815,
 	2815,
+	2815,
+	2815,
 	4353,
 	2815,
 	2815,
@@ -971,7 +979,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	237,
+	239,
 	s_methodPointers,
 	0,
 	NULL,

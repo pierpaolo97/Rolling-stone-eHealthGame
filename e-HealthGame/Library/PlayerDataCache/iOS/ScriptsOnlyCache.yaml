@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - cameraFollow
     - createXML
     - detectCollision
+    - diplaypause
     - displayHighScores
     - dissolve
     - fromKeyboard
@@ -238,7 +239,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7628}
     - Class: 114
-      Script: {instanceID: 7874}
+      Script: {instanceID: 7876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -363,9 +364,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7026}
     - Class: 114
-      Script: {instanceID: 7926}
+      Script: {instanceID: 7638}
     - Class: 114
-      Script: {instanceID: 27562}
+      Script: {instanceID: 7928}
+    - Class: 114
+      Script: {instanceID: 23560}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -427,8 +430,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -476,7 +477,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7026}
     - Class: 114
-      Script: {instanceID: 7926}
+      Script: {instanceID: 7928}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1576,6 +1577,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerButton
+  - hash:
+      serializedVersion: 2
+      Hash: 06c9f1eeb2b56c01309c7f2f772364c3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: diplaypause
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
