@@ -14,6 +14,8 @@ public class dissolve : MonoBehaviour
     public GameObject risposta2;
     public GameObject fuoco1;
     public GameObject fuoco2;
+    public GameObject GrassBlade;
+    public GameObject GrassBlade2;
     private Color colMat;
 
 
@@ -64,6 +66,15 @@ public class dissolve : MonoBehaviour
         if (fuoco2.activeSelf)
         {
             fuoco2.SetActive(false);
+        }
+        if (GrassBlade.activeSelf)
+        {
+            GrassBlade.SetActive(false);
+        }
+
+        if (GrassBlade2.activeSelf)
+        {
+            GrassBlade2.SetActive(false);
         }
 
         GameObject[] allObjects = Object.FindObjectsOfType<GameObject>();
