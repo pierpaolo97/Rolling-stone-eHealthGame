@@ -192,7 +192,7 @@ class SpriteRenderer;
 class SpriteShapeRenderer; 
 class TilemapRenderer; 
 class TrailRenderer; 
-class VFXRenderer; 
+class VFXRenderer; template <> void RegisterUnityClass<VFXRenderer>(const char*);
 class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
 class Rigidbody2D; 
 namespace TextRenderingPrivate { class TextMesh; } 
@@ -306,7 +306,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 86 non stripped classes
+	//Total: 87 non stripped classes
 	//0. Animation
 	RegisterUnityClass<Animation>("Animation");
 	//1. AnimationClip
@@ -473,11 +473,13 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 	//82. VFXManager
 	RegisterUnityClass<VFXManager>("VFX");
-	//83. VisualEffect
+	//83. VFXRenderer
+	RegisterUnityClass<VFXRenderer>("VFX");
+	//84. VisualEffect
 	RegisterUnityClass<VisualEffect>("VFX");
-	//84. VisualEffectAsset
+	//85. VisualEffectAsset
 	RegisterUnityClass<VisualEffectAsset>("VFX");
-	//85. VisualEffectObject
+	//86. VisualEffectObject
 	RegisterUnityClass<VisualEffectObject>("VFX");
 
 }
