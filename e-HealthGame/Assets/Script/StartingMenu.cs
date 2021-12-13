@@ -18,6 +18,19 @@ public class StartingMenu : MonoBehaviour
     AsyncOperation asyncTutorial;
     //int caricato = 0;
 
+    public void Awake()
+    {
+        if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
+        {
+            Debug.Log("First Time Opening");
+
+            //Set first time opening to false
+            PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
+            SceneManager.LoadSceneAsync("Tutorial");
+
+        }
+    }
+
     public void Start()
     {
 
@@ -25,6 +38,7 @@ public class StartingMenu : MonoBehaviour
         {
             endtransition.SetActive(true);
         }
+
     }
 
     public void Update()

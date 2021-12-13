@@ -159,9 +159,11 @@ public class assolve : MonoBehaviour
                         Material[] materials = go.GetComponent<MeshRenderer>().materials;
                         foreach (Material mat in materials)
                         {
-                            mat.shader = oldShadersList[i];
-                            i++;
-
+                            if (i<= oldShadersList.Count)
+                            {
+                                mat.shader = oldShadersList[i];
+                                i++;
+                            }
                         }
                     }
                 }

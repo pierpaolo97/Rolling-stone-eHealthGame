@@ -6,8 +6,6 @@ using System.Linq;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-
-
 public class setQuestion : MonoBehaviour
 {
     public Question[] questionsC;
@@ -35,10 +33,11 @@ public class setQuestion : MonoBehaviour
 
     public List<GameObject> mondi;
     public GameObject currentWorld;
+    public GameObject pioggia;
     public List<int> validChoices;
     
 
-    void Awake()
+    void Start()
     {
 
         if (PlayerPrefs.GetInt("Level", 0)== 0)
@@ -46,7 +45,6 @@ public class setQuestion : MonoBehaviour
             transition.SetActive(true);
         }
        
-        setCurrentWorld();
         //Debug.Log(PlayerPrefs.GetString("LetteraLivello"));
         rend = domanda.transform.Find("Immagine").GetComponent<MeshRenderer>();
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();
@@ -63,6 +61,11 @@ public class setQuestion : MonoBehaviour
         }
         
         SetCurrentQuestion();
+    }
+
+    void Awake()
+    {
+        setCurrentWorld();
     }
 
     public void caricaDomande()
@@ -99,7 +102,18 @@ public class setQuestion : MonoBehaviour
 
         PlayerPrefs.SetInt("CurrentWorld", z);
         currentWorld = mondi[z];
-        Instantiate(currentWorld, new Vector3(0.0001220703f, 6.103516e-05f, 0f), transform.rotation);
+        Instantiate(currentWorld, new Vector3(0f, 0f, 0f), transform.rotation);
+
+        if (currentWorld.name == "Mondo" || currentWorld.name == "Giostre")
+        {
+            int A = Random.Range(0, 10);
+            Debug.Log(A);
+            if (A > 8)
+            {
+                Instantiate(pioggia, new Vector3(3.6f, 113f, 4f), transform.rotation);
+            }
+        }
+
         //currentWorld.SetActive(true);
     }
 

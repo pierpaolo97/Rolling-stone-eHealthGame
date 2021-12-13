@@ -1472,7 +1472,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0, b: 0, a: 1}
+      maxColor: {r: 0.58431375, g: 0.5803922, b: 0.5803922, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6814,7 +6814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &491364809
 Light:
   m_ObjectHideFlags: 0
@@ -7179,7 +7179,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0, b: 0, a: 1}
+      maxColor: {r: 0.58431375, g: 0.5803922, b: 0.5803922, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -12009,7 +12009,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562189691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37, y: 48.1, z: -6.5}
+  m_LocalPosition: {x: 37, y: 46, z: -6.5}
   m_LocalScale: {x: 0.51614994, y: 0.51614994, z: 0.51614994}
   m_Children:
   - {fileID: 968345033}
@@ -12345,7 +12345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672167180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00012207031, y: 0, z: 0}
+  m_LocalPosition: {x: -0.00012207031, y: -0.24, z: 0}
   m_LocalScale: {x: 11, y: 1, z: 7.3507037}
   m_Children: []
   m_Father: {fileID: 1960603727}
@@ -13629,8 +13629,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.39607844, g: 1, b: 0.19607843, a: 1}
-      maxColor: {r: 0.22352941, g: 1, b: 0.29411766, a: 1}
+      minColor: {r: 0.77254903, g: 0.654902, b: 0.69411767, a: 1}
+      maxColor: {r: 0.9529412, g: 0.8117647, b: 0.8392157, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -21361,6 +21361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae821c939f8d2134abb570ece73bf031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BirdAnimator: {fileID: 63364955}
   Player: {fileID: 168186764}
   timeBetweenQuestion: 3.3
   tocco: 0
@@ -21393,16 +21394,18 @@ MonoBehaviour:
   play2: {fileID: 773125028}
   play3: {fileID: 1171616578}
   delay: 0.1
-  benvenutoText: 'Buongiorno a tutti belli e rutti '
-  primoText: 'Queste so le carte, spero sappiate legge '
-  secondoText: 'Lo score indica quanto sei forte   '
-  terzoText: 'Qua devi azzeccare le palle '
-  quartoText: "M\xF2 muvt e inclina il telefono. Good Luck! "
-  quintoText: ' Statt accort e ascoltaaaaaaaa'
-  RightText: ' Bravo! Sei una bomba!'
-  WrongText: ' Peccato! Fai cagare!'
-  TryAgain: ' Prova di nuovo asino! '
-  varText: 
+  benvenutoText: "Benvenuto amico! Io sono Cip! Ora ti spiegher\xF2 le regole del
+    gioco!  "
+  benvenutoText2: 'Dovrai indovindare se la parola mostrata ha un suono dolce o duro '
+  primoText: "Qui \xE8 indicata la parola del turno in corso  "
+  secondoText: "Qui invece \xE8 indicato il tuo punteggio e il tempo "
+  terzoText: "Questi portali sono le risposte in cui la pallina dovr\xE0 entrare "
+  quartoText: 'Ora prova a giocare inclinando il telefono!  3, 2, 1 VIA! '
+  quintoText: 'Stai attento e ascolta la parola! '
+  RightText: ' Bravo! Hai indovinato! '
+  WrongText: ' Peccato! Ritenta! '
+  TryAgain: ' Prova un altra volta! '
+  currentText: 
 --- !u!114 &1804225172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21744,7 +21747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903581656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45, y: 46.69995, z: -6.5}
+  m_LocalPosition: {x: -45, y: 46, z: -6.5}
   m_LocalScale: {x: 0.51614994, y: 0.51614994, z: 0.51614994}
   m_Children:
   - {fileID: 386031714}
@@ -21893,7 +21896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960603726}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00012207031, y: 0.000061035156, z: 0}
+  m_LocalPosition: {x: 0.00012207031, y: -0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 832302075}
@@ -22597,8 +22600,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.39607844, g: 1, b: 0.19607843, a: 1}
-      maxColor: {r: 0.22352941, g: 1, b: 0.29411766, a: 1}
+      minColor: {r: 0.77254903, g: 0.654902, b: 0.69411767, a: 1}
+      maxColor: {r: 0.9529412, g: 0.8117647, b: 0.8392157, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
