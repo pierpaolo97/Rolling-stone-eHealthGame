@@ -82,6 +82,7 @@ public class Tutorial_Collision : MonoBehaviour
 
     private void Start()
     {
+        TextComic.SetActive(true);
         scoreValue = this.GetComponent<Score>().score;
         Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();
@@ -109,7 +110,6 @@ public class Tutorial_Collision : MonoBehaviour
             StartCoroutine(ShowText(quintoText));
             Bird.SetActive(true);
         }
-
     }
 
     private void Update()
@@ -225,11 +225,13 @@ public class Tutorial_Collision : MonoBehaviour
     {
         for (int i = 0; i < textDaScrivere.Length; i++)
         {
+            Bird.GetComponent<Animator>().Play("IdleSpeak");
             currentText = textDaScrivere.Substring(0, i);
             //Debug.Log(Bird.transform.GetChild(0).transform.GetChild(1).name);
             TextComic.transform.GetChild(0).GetComponent<Text>().text = currentText;
             yield return new WaitForSeconds(delay);
         }
+        Bird.GetComponent<Animator>().Play("idleMute");
     }
 
     IEnumerator ShowTextbenvenuto(string textDaScrivere)
@@ -270,7 +272,7 @@ public class Tutorial_Collision : MonoBehaviour
     {
         for (int i = 0; i < textDaScrivere.Length; i++)
         {
-            Bird.GetComponent<Animator>().Play("Flying speak");
+            Bird.GetComponent<Animator>().Play("FlySpeak");
             currentText = textDaScrivere.Substring(0, i);
             //Debug.Log(Bird.transform.GetChild(0).transform.GetChild(1).name);
             TextComic.transform.GetChild(0).GetComponent<Text>().text = currentText;
@@ -399,14 +401,6 @@ public class Tutorial_Collision : MonoBehaviour
         pause.SetActive(false);
     }
 
-    IEnumerator attendiTesto()
-    {
-        yield return new WaitForSeconds(2f);
-        Bird.GetComponent<Animator>().Play("IdleMute");
-        TextComic.SetActive(false);
-
-    }
-
     IEnumerator playAudio()
     {
         yield return new WaitForSeconds(1f);
@@ -457,21 +451,21 @@ public class Tutorial_Collision : MonoBehaviour
 
     public void CheckCaroutine()
     {
-        if (BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("FlyIdle") && boolcheck == true)
+        if (BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("FlySpeak") && boolcheck == true)
         {
             TextComic.SetActive(true);
             StartCoroutine(ShowTextCards(primoText));
             boolcheck = false;
         }
 
-        if (BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("FlyIdle2") && boolcheck2 == true)
+        if (BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("FlySpeak2") && boolcheck2 == true)
         {
             TextComic.SetActive(true);
             StartCoroutine(ShowTextTimeScore(secondoText));
             boolcheck2 = false;
         }
 
-        if (BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("FlyIdle3") && boolcheck3 == true)
+        if (BirdAnimator.GetCurrentAnimatorStateInfo(0).IsName("FlySpeak3") && boolcheck3 == true)
         {
             TextComic.SetActive(true);
             StartCoroutine(ShowTextPortals(terzoText));
