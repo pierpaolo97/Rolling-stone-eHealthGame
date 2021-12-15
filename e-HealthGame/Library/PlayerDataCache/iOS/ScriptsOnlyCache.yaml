@@ -438,8 +438,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -785,7 +783,7 @@ ScriptsOnlyBuild:
     className: ShadowCaster2D
   - hash:
       serializedVersion: 2
-      Hash: b1bf63fa53b0ef387763e97e0e88d229
+      Hash: ac8eb0833eb5b301837540f08cae4413
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: detectCollision

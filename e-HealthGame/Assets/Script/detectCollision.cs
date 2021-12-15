@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.VFX;
 using System.Xml;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -13,6 +14,7 @@ public class detectCollision : MonoBehaviour
 
     //public GameObject animCam;
     public GameObject Player;
+    public VisualEffect Vfx;
     [SerializeField]
     private float timeBetweenQuestion = 0.4f;
     public int tocco = 0;
@@ -50,10 +52,12 @@ public class detectCollision : MonoBehaviour
     public GameObject risposta1;
     public GameObject risposta2;
     private Vector3 targetPosition;
+    private GameObject AtomBall;
+
 
     private void Start()
     {
-        //camera.GetComponent<assolve>().changeMaterial();
+        AtomBall = Player.transform.GetChild(0).gameObject;
 
         scoreValue = this.GetComponent<Score>().score;
         //Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
@@ -145,6 +149,15 @@ public class detectCollision : MonoBehaviour
             Y.Add(targetPosition.y - this.transform.position.y);
             Z.Add(targetPosition.z - this.transform.position.z);
         }
+
+        if (AtomBall.transform.position.y > 3)
+        {
+            Vfx.Stop();
+        }
+        else
+        {
+            Vfx.Play();
+        }
     }
 
 
@@ -155,7 +168,7 @@ public class detectCollision : MonoBehaviour
         level++;
         PlayerPrefs.SetInt("Level", level);
 
-        if (level == 2)
+        if (level == 10)
         {
             StartCoroutine(attendiAnimazione());
             fineLivello();

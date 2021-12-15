@@ -3331,7 +3331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73, y: 26}
+  m_AnchoredPosition: {x: 73, y: 0}
   m_SizeDelta: {x: 520.8801, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193421883
@@ -3354,8 +3354,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Crediti per le immagini a FreePik, Vecteezy,\n the noun project.\nCrediti
-    per i suoni a ...."
+  m_text: "Crediti per le immagini a FreePik, \nVecteezy, the noun project.\nCrediti
+    per i suoni a Alessandro Farr\xE0 e \nVasco Grossman da Unity Asset Store."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2342b7c03fe9b486c9e9f44ea95f40ca, type: 2}
   m_sharedMaterial: {fileID: 5781948850850278522, guid: 2342b7c03fe9b486c9e9f44ea95f40ca, type: 2}

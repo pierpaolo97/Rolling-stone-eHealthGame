@@ -20,7 +20,7 @@ public class ButtonsTutorial : MonoBehaviour
     public void RestartTutorial()
     {
         PlayerPrefs.SetInt("Level", 0);
-        PlayerPrefs.GetInt("scoreLevel", 0);
+        PlayerPrefs.SetInt("scoreLevel", 0);
         SceneManager.LoadScene("Tutorial");
     }
 

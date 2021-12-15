@@ -3910,6 +3910,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.VFX.VisualEffect
 
+		//System.Void UnityEngine.VFX.VisualEffect::SendEventFromScript(System.Int32,UnityEngine.VFX.VFXEventAttribute)
+		void Register_UnityEngine_VFX_VisualEffect_SendEventFromScript();
+		Register_UnityEngine_VFX_VisualEffect_SendEventFromScript();
+
 		//UnityEngine.VFX.VisualEffectAsset UnityEngine.VFX.VisualEffect::get_visualEffectAsset()
 		void Register_UnityEngine_VFX_VisualEffect_get_visualEffectAsset();
 		Register_UnityEngine_VFX_VisualEffect_get_visualEffectAsset();

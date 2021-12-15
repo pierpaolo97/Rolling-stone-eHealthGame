@@ -1011,25 +1011,25 @@ struct VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields
 {
 public:
 	// System.Int32 UnityEngine.VFX.VisualEffectAsset::PlayEventID
-	int32_t ___PlayEventID_4;
+	int32_t ___PlayEventID_6;
 	// System.Int32 UnityEngine.VFX.VisualEffectAsset::StopEventID
-	int32_t ___StopEventID_5;
+	int32_t ___StopEventID_7;
 
 public:
-	inline static int32_t get_offset_of_PlayEventID_4() { return static_cast<int32_t>(offsetof(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields, ___PlayEventID_4)); }
-	inline int32_t get_PlayEventID_4() const { return ___PlayEventID_4; }
-	inline int32_t* get_address_of_PlayEventID_4() { return &___PlayEventID_4; }
-	inline void set_PlayEventID_4(int32_t value)
+	inline static int32_t get_offset_of_PlayEventID_6() { return static_cast<int32_t>(offsetof(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields, ___PlayEventID_6)); }
+	inline int32_t get_PlayEventID_6() const { return ___PlayEventID_6; }
+	inline int32_t* get_address_of_PlayEventID_6() { return &___PlayEventID_6; }
+	inline void set_PlayEventID_6(int32_t value)
 	{
-		___PlayEventID_4 = value;
+		___PlayEventID_6 = value;
 	}
 
-	inline static int32_t get_offset_of_StopEventID_5() { return static_cast<int32_t>(offsetof(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields, ___StopEventID_5)); }
-	inline int32_t get_StopEventID_5() const { return ___StopEventID_5; }
-	inline int32_t* get_address_of_StopEventID_5() { return &___StopEventID_5; }
-	inline void set_StopEventID_5(int32_t value)
+	inline static int32_t get_offset_of_StopEventID_7() { return static_cast<int32_t>(offsetof(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields, ___StopEventID_7)); }
+	inline int32_t get_StopEventID_7() const { return ___StopEventID_7; }
+	inline int32_t* get_address_of_StopEventID_7() { return &___StopEventID_7; }
+	inline void set_StopEventID_7(int32_t value)
 	{
-		___StopEventID_5 = value;
+		___StopEventID_7 = value;
 	}
 };
 
@@ -1172,6 +1172,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
 // UnityEngine.VFX.VFXEventAttribute UnityEngine.VFX.VFXEventAttribute::Internal_InstanciateVFXEventAttribute(UnityEngine.VFX.VisualEffectAsset)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF * VFXEventAttribute_Internal_InstanciateVFXEventAttribute_m17249769F68DD56C7532726912EA0E4690E1A5D2 (VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50 * ___vfxAsset0, const RuntimeMethod* method);
+// System.Void UnityEngine.VFX.VisualEffect::SendEventFromScript(System.Int32,UnityEngine.VFX.VFXEventAttribute)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, int32_t ___eventNameID0, VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF * ___eventAttribute1, const RuntimeMethod* method);
+// System.Void UnityEngine.VFX.VisualEffect::SendEvent(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_SendEvent_m774CF823B6ECFD1DD2C92DF11F060BC32F1A1BC7 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, int32_t ___eventNameID0, const RuntimeMethod* method);
 // UnityEngine.VFX.VFXEventAttribute UnityEngine.VFX.VisualEffect::CreateVFXEventAttribute()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF * VisualEffect_CreateVFXEventAttribute_mE99FC6DA23D465D06A8547CC5B2502FB0B30D8D6 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, const RuntimeMethod* method);
 // System.Void System.Action`1<UnityEngine.VFX.VFXOutputEventArgs>::Invoke(!0)
@@ -1885,6 +1889,56 @@ IL_0025:
 		return L_6;
 	}
 }
+// System.Void UnityEngine.VFX.VisualEffect::SendEventFromScript(System.Int32,UnityEngine.VFX.VFXEventAttribute)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, int32_t ___eventNameID0, VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF * ___eventAttribute1, const RuntimeMethod* method)
+{
+	typedef void (*VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4_ftn) (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA *, int32_t, VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF *);
+	static VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.VFX.VisualEffect::SendEventFromScript(System.Int32,UnityEngine.VFX.VFXEventAttribute)");
+	_il2cpp_icall_func(__this, ___eventNameID0, ___eventAttribute1);
+}
+// System.Void UnityEngine.VFX.VisualEffect::SendEvent(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_SendEvent_m774CF823B6ECFD1DD2C92DF11F060BC32F1A1BC7 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, int32_t ___eventNameID0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___eventNameID0;
+		VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4(__this, L_0, (VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF *)NULL, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.VFX.VisualEffect::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_Play_mA28636AFF6EA24AADA28D11E05A9F356DBC46E35 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var);
+		int32_t L_0 = ((VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields*)il2cpp_codegen_static_fields_for(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var))->get_PlayEventID_6();
+		VisualEffect_SendEvent_m774CF823B6ECFD1DD2C92DF11F060BC32F1A1BC7(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.VFX.VisualEffect::Stop()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffect_Stop_mABFC4D36BE1048ECB4C1154816F1749874FFF334 (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var);
+		int32_t L_0 = ((VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields*)il2cpp_codegen_static_fields_for(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var))->get_StopEventID_7();
+		VisualEffect_SendEvent_m774CF823B6ECFD1DD2C92DF11F060BC32F1A1BC7(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
 // UnityEngine.VFX.VFXEventAttribute UnityEngine.VFX.VisualEffect::InvokeGetCachedEventAttributeForOutputEvent_Internal(UnityEngine.VFX.VisualEffect)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF * VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_m1A4D8B1736777CB18C2893313309880E61798C6B (VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA * ___source0, const RuntimeMethod* method)
 {
@@ -2000,10 +2054,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualEffectAsset__cctor_mD1DB26F94C7046
 	{
 		int32_t L_0;
 		L_0 = Shader_PropertyToID_m8C1BEBBAC0CC3015B142AF0FA856495D5D239F5F(_stringLiteralDD6A1C41DBA2920AB3C87C187F0272E6380C0AAA, /*hidden argument*/NULL);
-		((VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields*)il2cpp_codegen_static_fields_for(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var))->set_PlayEventID_4(L_0);
+		((VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields*)il2cpp_codegen_static_fields_for(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var))->set_PlayEventID_6(L_0);
 		int32_t L_1;
 		L_1 = Shader_PropertyToID_m8C1BEBBAC0CC3015B142AF0FA856495D5D239F5F(_stringLiteral55CE32F73183782A9E356F9B9E36223057BA0BA3, /*hidden argument*/NULL);
-		((VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields*)il2cpp_codegen_static_fields_for(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var))->set_StopEventID_5(L_1);
+		((VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_StaticFields*)il2cpp_codegen_static_fields_for(VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_il2cpp_TypeInfo_var))->set_StopEventID_7(L_1);
 		return;
 	}
 }

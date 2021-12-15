@@ -27,8 +27,9 @@ public class dissolve : MonoBehaviour
             {
                 //dissolveMat[i].SetFloat("Dissolve_Value", Mathf.Lerp(0f, 1f, t));
                 allMaterials[i].SetFloat("Dissolve_Value", Mathf.Lerp(0f, 1f, t));
-                t += 0.008f * Time.fixedDeltaTime;
             }
+            t += 0.5f * Time.fixedDeltaTime;
+
 
             if (GrassBlade != null)
             {

@@ -67,11 +67,19 @@ extern void VFXOutputEventArgs__ctor_m7C49FC1B34F3582FE08D7A1CAA5024C09A86F7A2 (
 extern void VisualEffect_get_visualEffectAsset_m019D107588568B2C5F1FFA77C626DC986A63AD96 (void);
 // 0x0000001D UnityEngine.VFX.VFXEventAttribute UnityEngine.VFX.VisualEffect::CreateVFXEventAttribute()
 extern void VisualEffect_CreateVFXEventAttribute_mE99FC6DA23D465D06A8547CC5B2502FB0B30D8D6 (void);
-// 0x0000001E UnityEngine.VFX.VFXEventAttribute UnityEngine.VFX.VisualEffect::InvokeGetCachedEventAttributeForOutputEvent_Internal(UnityEngine.VFX.VisualEffect)
+// 0x0000001E System.Void UnityEngine.VFX.VisualEffect::SendEventFromScript(System.Int32,UnityEngine.VFX.VFXEventAttribute)
+extern void VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4 (void);
+// 0x0000001F System.Void UnityEngine.VFX.VisualEffect::SendEvent(System.Int32)
+extern void VisualEffect_SendEvent_m774CF823B6ECFD1DD2C92DF11F060BC32F1A1BC7 (void);
+// 0x00000020 System.Void UnityEngine.VFX.VisualEffect::Play()
+extern void VisualEffect_Play_mA28636AFF6EA24AADA28D11E05A9F356DBC46E35 (void);
+// 0x00000021 System.Void UnityEngine.VFX.VisualEffect::Stop()
+extern void VisualEffect_Stop_mABFC4D36BE1048ECB4C1154816F1749874FFF334 (void);
+// 0x00000022 UnityEngine.VFX.VFXEventAttribute UnityEngine.VFX.VisualEffect::InvokeGetCachedEventAttributeForOutputEvent_Internal(UnityEngine.VFX.VisualEffect)
 extern void VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_m1A4D8B1736777CB18C2893313309880E61798C6B (void);
-// 0x0000001F System.Void UnityEngine.VFX.VisualEffect::InvokeOutputEventReceived_Internal(UnityEngine.VFX.VisualEffect,System.Int32)
+// 0x00000023 System.Void UnityEngine.VFX.VisualEffect::InvokeOutputEventReceived_Internal(UnityEngine.VFX.VisualEffect,System.Int32)
 extern void VisualEffect_InvokeOutputEventReceived_Internal_mFC477F53118047CFF858A82FE87DF9356706421A (void);
-static Il2CppMethodPointer s_methodPointers[31] = 
+static Il2CppMethodPointer s_methodPointers[35] = 
 {
 	VFXEventAttribute__ctor_mDE4833E90493250BDBF27A8A5AFAADE4E5A90964,
 	VFXEventAttribute_Internal_Create_mE5768E6D7DDCF1F8B6E917B5BAA7FE61820FE5DE,
@@ -102,6 +110,10 @@ static Il2CppMethodPointer s_methodPointers[31] =
 	VFXOutputEventArgs__ctor_m7C49FC1B34F3582FE08D7A1CAA5024C09A86F7A2,
 	VisualEffect_get_visualEffectAsset_m019D107588568B2C5F1FFA77C626DC986A63AD96,
 	VisualEffect_CreateVFXEventAttribute_mE99FC6DA23D465D06A8547CC5B2502FB0B30D8D6,
+	VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4,
+	VisualEffect_SendEvent_m774CF823B6ECFD1DD2C92DF11F060BC32F1A1BC7,
+	VisualEffect_Play_mA28636AFF6EA24AADA28D11E05A9F356DBC46E35,
+	VisualEffect_Stop_mABFC4D36BE1048ECB4C1154816F1749874FFF334,
 	VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_m1A4D8B1736777CB18C2893313309880E61798C6B,
 	VisualEffect_InvokeOutputEventReceived_Internal_mFC477F53118047CFF858A82FE87DF9356706421A,
 };
@@ -110,7 +122,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] =
 {
 	{ 0x0600001B, VFXOutputEventArgs__ctor_m7C49FC1B34F3582FE08D7A1CAA5024C09A86F7A2_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[31] = 
+static const int32_t s_InvokerIndices[35] = 
 {
 	852,
 	4325,
@@ -141,6 +153,10 @@ static const int32_t s_InvokerIndices[31] =
 	1260,
 	2751,
 	2751,
+	1260,
+	2303,
+	2815,
+	2815,
 	4198,
 	4001,
 };
@@ -149,7 +165,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_VFXModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VFXModule_CodeGenModule = 
 {
 	"UnityEngine.VFXModule.dll",
-	31,
+	35,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,

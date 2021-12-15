@@ -26,6 +26,8 @@ struct CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C;
 struct DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B;
 // System.Diagnostics.DebuggerBrowsableAttribute
 struct DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53;
+// UnityEngine.Bindings.FreeFunctionAttribute
+struct FreeFunctionAttribute_tBB3B939D760190FEC84762F1BA94B99672613D03;
 // System.Runtime.CompilerServices.InternalsVisibleToAttribute
 struct InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C;
 // System.Reflection.MemberFilter
@@ -615,6 +617,15 @@ public:
 };
 
 
+// UnityEngine.Bindings.FreeFunctionAttribute
+struct FreeFunctionAttribute_tBB3B939D760190FEC84762F1BA94B99672613D03  : public NativeMethodAttribute_t57F61ACA17BEC1260A06658ACD971B0009CC1866
+{
+public:
+
+public:
+};
+
+
 // System.RuntimeTypeHandle
 struct RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9 
 {
@@ -909,17 +920,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StaticAccessorAttribute__ctor_m0C3215256
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotNullAttribute__ctor_m7F7AF5B61F69FAA7091CD36347D6A0FA186CB8A5 (NotNullAttribute_t22E59D8061EE39B8A3F837C2245240C2466382FC * __this, String_t* ___exception0, const RuntimeMethod* method);
 // System.Void UnityEngine.Scripting.UsedByNativeCodeAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UsedByNativeCodeAttribute__ctor_mA8236FADF130BCDD86C6017039295F9D521EECB8 (UsedByNativeCodeAttribute_t604CF4E57FB3E7BCCCF0871A9B526472B2CDCB92 * __this, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35 (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * __this, const RuntimeMethod* method);
 // System.Void System.Diagnostics.DebuggerBrowsableAttribute::.ctor(System.Diagnostics.DebuggerBrowsableState)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5 (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * __this, int32_t ___state0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35 (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.RequireComponent::.ctor(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequireComponent__ctor_m5EC89D3D22D7D880E1B88A5C9FADF1FBDC713EE4 (RequireComponent_tEDA546F9722B8874DA9658BDAB821BA49647FC91 * __this, Type_t * ___requiredComponent0, const RuntimeMethod* method);
+// System.Void UnityEngine.Bindings.FreeFunctionAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FreeFunctionAttribute__ctor_m89A928D5B13E0189814C007431EA5EA8EE4768C1 (FreeFunctionAttribute_tBB3B939D760190FEC84762F1BA94B99672613D03 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Bindings.NativeMethodAttribute::set_Name(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeMethodAttribute_set_Name_mC85A9B1CE4650D43D0E73B503753864CA4952A9C_inline (NativeMethodAttribute_t57F61ACA17BEC1260A06658ACD971B0009CC1866 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.Bindings.NativeMethodAttribute::set_HasExplicitThis(System.Boolean)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeMethodAttribute_set_HasExplicitThis_mB44D70CDD0D14884A4FA84776C3091C742FAFE44_inline (NativeMethodAttribute_t57F61ACA17BEC1260A06658ACD971B0009CC1866 * __this, bool ___value0, const RuntimeMethod* method);
 static void UnityEngine_VFXModule_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[0];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x54\x69\x6C\x65\x6D\x61\x70\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[1];
@@ -1298,8 +1315,8 @@ static void UnityEngine_VFXModule_CustomAttributesCacheGenerator(CustomAttribute
 		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x54\x65\x72\x72\x61\x69\x6E\x50\x68\x79\x73\x69\x63\x73\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
-		CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF * tmp = (CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF *)cache->attributes[95];
-		CompilationRelaxationsAttribute__ctor_mAC3079EBC4EEAB474EED8208EF95DB39C922333B(tmp, 8LL, NULL);
+		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[95];
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x54\x65\x78\x74\x52\x65\x6E\x64\x65\x72\x69\x6E\x67\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[96];
@@ -1370,8 +1387,8 @@ static void UnityEngine_VFXModule_CustomAttributesCacheGenerator(CustomAttribute
 		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x55\x6E\x69\x74\x79\x57\x65\x62\x52\x65\x71\x75\x65\x73\x74\x41\x75\x64\x69\x6F\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
-		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[113];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x56\x46\x58\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF * tmp = (CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF *)cache->attributes[113];
+		CompilationRelaxationsAttribute__ctor_mAC3079EBC4EEAB474EED8208EF95DB39C922333B(tmp, 8LL, NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[114];
@@ -1423,7 +1440,7 @@ static void UnityEngine_VFXModule_CustomAttributesCacheGenerator(CustomAttribute
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[126];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x54\x69\x6C\x65\x6D\x61\x70\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x55\x6E\x69\x74\x79\x57\x65\x62\x52\x65\x71\x75\x65\x73\x74\x54\x65\x78\x74\x75\x72\x65\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[127];
@@ -1431,7 +1448,7 @@ static void UnityEngine_VFXModule_CustomAttributesCacheGenerator(CustomAttribute
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[128];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x55\x6E\x69\x74\x79\x57\x65\x62\x52\x65\x71\x75\x65\x73\x74\x54\x65\x78\x74\x75\x72\x65\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x56\x46\x58\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[129];
@@ -1668,7 +1685,7 @@ static void VisualEffectObject_tC7804AFDC2B4F2F0CE6833AC467ABC177A1617DB_CustomA
 {
 	{
 		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[0];
-		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x56\x46\x58\x53\x63\x72\x69\x70\x74\x69\x6E\x67\x43\x6C\x61\x73\x73\x65\x73\x2E\x68"), NULL);
+		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x56\x46\x58\x2F\x50\x75\x62\x6C\x69\x63\x2F\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x41\x73\x73\x65\x74\x2E\x68"), NULL);
 	}
 	{
 		UsedByNativeCodeAttribute_t604CF4E57FB3E7BCCCF0871A9B526472B2CDCB92 * tmp = (UsedByNativeCodeAttribute_t604CF4E57FB3E7BCCCF0871A9B526472B2CDCB92 *)cache->attributes[1];
@@ -1680,7 +1697,7 @@ static void VisualEffectObject_tC7804AFDC2B4F2F0CE6833AC467ABC177A1617DB_CustomA
 	}
 	{
 		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[3];
-		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x56\x46\x58\x2F\x50\x75\x62\x6C\x69\x63\x2F\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x41\x73\x73\x65\x74\x2E\x68"), NULL);
+		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x56\x46\x58\x53\x63\x72\x69\x70\x74\x69\x6E\x67\x43\x6C\x61\x73\x73\x65\x73\x2E\x68"), NULL);
 	}
 }
 static void VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -1701,12 +1718,12 @@ static void VisualEffectAsset_tEFF95BDCD904AF7D5DEA8CF020C62E23A978EC50_CustomAt
 static void VFXOutputEventArgs_tE7E97EDFD67E4561E4412D2E4B1C999F95850BF5_CustomAttributesCacheGenerator_U3CnameIdU3Ek__BackingField(CustomAttributesCache* cache)
 {
 	{
-		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[0];
+		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
 	}
 	{
-		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
-		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[1];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void VFXOutputEventArgs_tE7E97EDFD67E4561E4412D2E4B1C999F95850BF5_CustomAttributesCacheGenerator_U3CeventAttributeU3Ek__BackingField(CustomAttributesCache* cache)
@@ -1734,11 +1751,20 @@ static void VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA_CustomAttribu
 	}
 	{
 		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[1];
-		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x56\x46\x58\x2F\x50\x75\x62\x6C\x69\x63\x2F\x53\x63\x72\x69\x70\x74\x42\x69\x6E\x64\x69\x6E\x67\x73\x2F\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x42\x69\x6E\x64\x69\x6E\x67\x73\x2E\x68"), NULL);
+		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x56\x46\x58\x2F\x50\x75\x62\x6C\x69\x63\x2F\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x2E\x68"), NULL);
 	}
 	{
 		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[2];
-		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x56\x46\x58\x2F\x50\x75\x62\x6C\x69\x63\x2F\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x2E\x68"), NULL);
+		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x56\x46\x58\x2F\x50\x75\x62\x6C\x69\x63\x2F\x53\x63\x72\x69\x70\x74\x42\x69\x6E\x64\x69\x6E\x67\x73\x2F\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x42\x69\x6E\x64\x69\x6E\x67\x73\x2E\x68"), NULL);
+	}
+}
+static void VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA_CustomAttributesCacheGenerator_VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4(CustomAttributesCache* cache)
+{
+	{
+		FreeFunctionAttribute_tBB3B939D760190FEC84762F1BA94B99672613D03 * tmp = (FreeFunctionAttribute_tBB3B939D760190FEC84762F1BA94B99672613D03 *)cache->attributes[0];
+		FreeFunctionAttribute__ctor_m89A928D5B13E0189814C007431EA5EA8EE4768C1(tmp, NULL);
+		NativeMethodAttribute_set_Name_mC85A9B1CE4650D43D0E73B503753864CA4952A9C_inline(tmp, il2cpp_codegen_string_new_wrapper("\x56\x69\x73\x75\x61\x6C\x45\x66\x66\x65\x63\x74\x42\x69\x6E\x64\x69\x6E\x67\x73\x3A\x3A\x53\x65\x6E\x64\x45\x76\x65\x6E\x74\x46\x72\x6F\x6D\x53\x63\x72\x69\x70\x74"), NULL);
+		NativeMethodAttribute_set_HasExplicitThis_mB44D70CDD0D14884A4FA84776C3091C742FAFE44_inline(tmp, true, NULL);
 	}
 }
 static void VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA_CustomAttributesCacheGenerator_VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_m1A4D8B1736777CB18C2893313309880E61798C6B(CustomAttributesCache* cache)
@@ -1764,7 +1790,7 @@ static void VFXRenderer_t4C81CB844B1A2DA17B517D9EDF040C718FAC90F4_CustomAttribut
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_UnityEngine_VFXModule_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_UnityEngine_VFXModule_AttributeGenerators[21] = 
+const CustomAttributesCacheGenerator g_UnityEngine_VFXModule_AttributeGenerators[22] = 
 {
 	VFXEventAttribute_tC4E90458100D52776F591CE62B19FF6051F423EF_CustomAttributesCacheGenerator,
 	VFXExpressionValues_tFB46D1CD053E9CD5BD04CBE4DB1B0ED24C9C0883_CustomAttributesCacheGenerator,
@@ -1782,6 +1808,7 @@ const CustomAttributesCacheGenerator g_UnityEngine_VFXModule_AttributeGenerators
 	VFXSpawnerState_t5879CC401019E9C9D4F81128147AE52AAED167CD_CustomAttributesCacheGenerator_VFXSpawnerState_CreateSpawnerStateWrapper_m079EC8731BA4C6A57A5138A16BB9DA147BCE6E17,
 	VFXSpawnerState_t5879CC401019E9C9D4F81128147AE52AAED167CD_CustomAttributesCacheGenerator_VFXSpawnerState_SetWrapValue_mA673646567D2B54072EEC275FB79BEBF82C7EE31,
 	VFXSpawnerState_t5879CC401019E9C9D4F81128147AE52AAED167CD_CustomAttributesCacheGenerator_VFXSpawnerState_Internal_Destroy_mED5E41CC22939E5F21A53FC44CA6FA7022F87273,
+	VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA_CustomAttributesCacheGenerator_VisualEffect_SendEventFromScript_m6FDCD210185FA5B18F9951736974653E66F1A6F4,
 	VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA_CustomAttributesCacheGenerator_VisualEffect_InvokeGetCachedEventAttributeForOutputEvent_Internal_m1A4D8B1736777CB18C2893313309880E61798C6B,
 	VisualEffect_t7C6E2AAA4DB4F47960AF2029EA96D4B579B3A4CA_CustomAttributesCacheGenerator_VisualEffect_InvokeOutputEventReceived_Internal_mFC477F53118047CFF858A82FE87DF9356706421A,
 	VFXManager_tE525803FFE4F59D87D5B5E61AF8433037F226340_CustomAttributesCacheGenerator_VFXManager_PrepareCamera_m5C3E91A1CC6CEAAB3B03E5D3C63380C91EC47323____cam0,
@@ -1809,6 +1836,22 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeMethodAttribute_set_Is
 	{
 		bool L_0 = ___value0;
 		__this->set_U3CIsThreadSafeU3Ek__BackingField_1(L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeMethodAttribute_set_Name_mC85A9B1CE4650D43D0E73B503753864CA4952A9C_inline (NativeMethodAttribute_t57F61ACA17BEC1260A06658ACD971B0009CC1866 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNameU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeMethodAttribute_set_HasExplicitThis_mB44D70CDD0D14884A4FA84776C3091C742FAFE44_inline (NativeMethodAttribute_t57F61ACA17BEC1260A06658ACD971B0009CC1866 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CHasExplicitThisU3Ek__BackingField_4(L_0);
 		return;
 	}
 }

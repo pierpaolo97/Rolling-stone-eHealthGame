@@ -6984,7 +6984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &491364809
 Light:
   m_ObjectHideFlags: 0
@@ -20835,7 +20835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.52000004, y: 1}
-  m_AnchoredPosition: {x: -1.7073, y: 3.9}
+  m_AnchoredPosition: {x: -1.7073, y: 7.2}
   m_SizeDelta: {x: 2134.83, y: 1173.2091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1567113196
@@ -20860,7 +20860,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 679aea8534a374fb68bb192664c6b684, type: 3}
-    m_FontSize: 240
+    m_FontSize: 230
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -20870,7 +20870,7 @@ MonoBehaviour:
     m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.8
+    m_LineSpacing: 0.75
   m_Text: 
 --- !u!222 &1567113197
 CanvasRenderer:
@@ -21757,7 +21757,8 @@ MonoBehaviour:
     gioco!  "
   benvenutoText2: 'Dovrai indovindare se la parola mostrata ha un suono dolce o duro '
   primoText: "Qui \xE8 indicata la parola del turno in corso  "
-  secondoText: "Qui invece \xE8 indicato il tuo punteggio e il tempo "
+  secondoText: "Qui ci sono il  punteggio e il tempo, minore sar\xE0 il tempo impiegato
+    maggiore sar\xE0 il punteggio "
   terzoText: "Questi portali sono le risposte in cui la pallina dovr\xE0 entrare "
   quartoText: 'Ora prova a giocare inclinando il telefono!   3, 2, 1 VIA! '
   quintoText: 'Stai attento e ascolta la parola! '
