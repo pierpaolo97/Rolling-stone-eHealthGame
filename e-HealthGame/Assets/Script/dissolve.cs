@@ -12,12 +12,18 @@ public class dissolve : MonoBehaviour
     public List<Material> allMaterials;
     public GameObject risposta1;
     public GameObject risposta2;
+    public GameObject risposte;
     GameObject fuoco1;
     GameObject GrassBlade;
     GameObject GrassBlade2;
     private Color colMat;
     int fatto = 0;
 
+    public void Start()
+    {
+        risposta1 = risposte.transform.Find("R1").transform.Find("Risposta").gameObject;
+        risposta2 = risposte.transform.Find("R2").transform.Find("Risposta").gameObject;
+    }
 
     public void FixedUpdate()
     {      
@@ -137,7 +143,20 @@ public class dissolve : MonoBehaviour
                             //Debug.LogWarning("NO COLOR" + mat.name);
                             mat.shader = shaderDissolve;
                             mat.SetColor("_Albedo", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
+                            if (go.name == "Plane")
+                            {
+                                mat.shader = shaderDissolve;
+                                mat.SetColor("_Albedo", new Color(1f, 1f, 1f));
+                            }
+                            if (go.name == "Plane_sabbia")
+                            {
+                                mat.shader = shaderDissolve;
+                                Debug.Log("caoooooooooooooooooo");
+                                mat.SetColor("_Albedo", new Color(0.6415094f, 0.5206518f, 0.3056248f));
+                            }
                         }
+
+
                         
                     }
                 }

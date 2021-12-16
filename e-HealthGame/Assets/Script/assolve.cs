@@ -67,7 +67,7 @@ public class assolve : MonoBehaviour
 
     }
 
-    private void Awake()
+    private void Start()
     {
         GrassBlade = GameObject.Find("Grassblade");
         GrassBlade2 = GameObject.Find("Grassblade Giostre");
@@ -134,6 +134,17 @@ public class assolve : MonoBehaviour
                                 oldShadersList.Add(mat.shader);
                                 mat.shader = shaderDissolve;
                                 mat.SetColor("_Albedo", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
+                                if (go.name == "Plane")
+                                {
+                                    mat.shader = shaderDissolve;
+                                    mat.SetColor("_Albedo", new Color(1f, 1f, 1f));
+                                }
+                                if (go.name == "Plane_sabbia")
+                                {
+                                    mat.shader = shaderDissolve;
+                                    mat.SetColor("_Albedo", new Color(0.6415094f, 0.5206518f, 0.3056248f));
+                                }
+
                             }
 
                         }

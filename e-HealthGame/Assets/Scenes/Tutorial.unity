@@ -588,10 +588,9 @@ Transform:
   m_LocalPosition: {x: 3.9589844, y: -46.52014, z: 24.756323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1903581657}
   - {fileID: 562189692}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210083032
 GameObject:
@@ -6966,7 +6965,7 @@ Transform:
   m_LocalScale: {x: 265.9779, y: 257.87766, z: 1486.0789}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &491364808
 GameObject:
@@ -7003,7 +7002,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -12187,7 +12186,7 @@ Transform:
   - {fileID: 382811001}
   - {fileID: 1098892943}
   m_Father: {fileID: 182117652}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &584709786 stripped
 GameObject:
@@ -12792,7 +12791,7 @@ Transform:
   - {fileID: 210733461}
   - {fileID: 2107580186}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!65 &732970697
 BoxCollider:
@@ -20316,7 +20315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438422673
 GameObject:
@@ -20443,7 +20442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453138194
 GameObject:
@@ -21760,12 +21759,14 @@ MonoBehaviour:
   secondoText: "Qui ci sono il  punteggio e il tempo, minore sar\xE0 il tempo impiegato
     maggiore sar\xE0 il punteggio "
   terzoText: "Questi portali sono le risposte in cui la pallina dovr\xE0 entrare "
-  quartoText: 'Ora prova a giocare inclinando il telefono!   3, 2, 1 VIA! '
+  quartoText: 'Ora prova a giocare inclinando il dispositivo!   3, 2, 1 VIA! '
   quintoText: 'Stai attento e ascolta la parola! '
   RightText: ' Bravo! Hai indovinato! '
   WrongText: ' Peccato! Ritenta! '
-  TryAgain: ' Prova un altra volta! '
+  TryAgain: ' Prova di nuovo e cerca i portali in tutta la mappa! '
   currentText: 
+  risposta1: {fileID: 1903581656}
+  risposta2: {fileID: 562189691}
 --- !u!114 &1804225172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22107,15 +22108,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903581656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45, y: 46, z: -6.5}
-  m_LocalScale: {x: 0.51614994, y: 0.51614994, z: 0.51614994}
+  m_LocalPosition: {x: -41.04101, y: -0.52014184, z: 18.256327}
+  m_LocalScale: {x: 0.51614994, y: 0.51615, z: 0.51615}
   m_Children:
   - {fileID: 386031714}
   - {fileID: 1021230140}
   - {fileID: 694435370}
   - {fileID: 1328857088}
-  m_Father: {fileID: 182117652}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1943582324
 PrefabInstance:

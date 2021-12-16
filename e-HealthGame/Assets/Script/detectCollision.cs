@@ -15,6 +15,7 @@ public class detectCollision : MonoBehaviour
     //public GameObject animCam;
     public GameObject Player;
     public VisualEffect Vfx;
+    public GameObject risposte;
     [SerializeField]
     private float timeBetweenQuestion = 0.4f;
     public int tocco = 0;
@@ -58,7 +59,7 @@ public class detectCollision : MonoBehaviour
     private void Start()
     {
         AtomBall = Player.transform.GetChild(0).gameObject;
-
+        StartCoroutine(WaitCamera());
         scoreValue = this.GetComponent<Score>().score;
         //Debug.LogWarning(PlayerPrefs.GetString("difficolta"));
 
@@ -67,6 +68,9 @@ public class detectCollision : MonoBehaviour
             async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             async.allowSceneActivation = false;
         }*/
+
+        risposta1 = risposte.transform.Find("R1").transform.Find("Risposta").gameObject;
+        risposta2 = risposte.transform.Find("R2").transform.Find("Risposta").gameObject;
 
         if (risposta1.CompareTag("True"))
         {
@@ -92,6 +96,8 @@ public class detectCollision : MonoBehaviour
             this.GetComponent<fromKeyboard>().speed = 500f;
             async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             async.allowSceneActivation = false;
+            camera.GetComponent<cameraFollow>().enabled = true;
+            camera.transform.rotation = Quaternion.Euler(40f, 0, 0);
             tocco = 1;
             if (collision.transform.name == "DOMANDA")
             {
@@ -158,6 +164,8 @@ public class detectCollision : MonoBehaviour
         {
             Vfx.Play();
         }
+
+
     }
 
 
@@ -191,7 +199,7 @@ public class detectCollision : MonoBehaviour
         this.transform.position = collision.transform.position;
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
         this.GetComponent<SphereCollider>().enabled = false;
-        scoreAnswer = Mathf.RoundToInt(10 * 5 / timeStart);
+        scoreAnswer = Mathf.RoundToInt(10 * 10 / timeStart);
         scoreValue += scoreAnswer;
         this.GetComponent<Score>().scoreText.text = scoreValue.ToString();
         this.GetComponent<Accelerometer>().speed = 0f;
@@ -226,6 +234,13 @@ public class detectCollision : MonoBehaviour
         scoreObject.SetActive(false);
         timeObject.SetActive(false);
         pause.SetActive(false);
+    }
+
+    IEnumerator WaitCamera()
+    {
+        yield return new WaitForSeconds(1f);
+        AtomBall.GetComponent<Rigidbody>().useGravity = true;
+
     }
 
 

@@ -35,7 +35,11 @@ public class setQuestion : MonoBehaviour
     public GameObject currentWorld;
     public GameObject pioggia;
     public List<int> validChoices;
-    
+
+    public GameObject risposta1;
+    public GameObject risposta2;
+    Vector3 posizioneRisp1;
+    Vector3 posizioneRisp2;
 
     void Start()
     {
@@ -50,6 +54,46 @@ public class setQuestion : MonoBehaviour
         textParola = domanda.transform.Find("Parola").GetComponent<TextMeshPro>();
         textCarta = carta.transform.Find("TextImg").GetComponent<Text>();
         photoCarta = carta.transform.Find("PhotoImg").GetComponent<RawImage>();
+
+        int estrazione = Random.Range(0, 2);
+
+        if (estrazione == 0)
+        {
+            posizioneRisp1 = new Vector3(-41f, 0.48f, -20f);
+        }
+        else
+        {
+            posizioneRisp1 = new Vector3(40f, 0.48f, -24f);
+        }
+
+        int estrazione2 = Random.Range(0, 2);
+
+        if (estrazione2 == 0)
+        {
+            posizioneRisp2 = new Vector3(-41f, 0.48f, 18.25f);
+        }
+        else
+        {
+            posizioneRisp2 = new Vector3(39.1f, 0.48f, 19.9f);
+        }
+
+
+        GameObject risp1 = Instantiate(risposta1, posizioneRisp1, transform.rotation) as GameObject;
+        if (risp1.transform.position.x > 20f)
+        {
+            risp1.transform.rotation = Quaternion.Euler(0, 110, 0);
+        }
+        risp1.transform.parent = risposte.transform;
+        risp1.name = risp1.name.Replace("(Clone)", "");
+
+        GameObject risp2 = Instantiate(risposta2, posizioneRisp2, transform.rotation) as GameObject;
+        if (risp2.transform.position.x < -20f)
+        {
+            risp2.transform.rotation = Quaternion.Euler(0, -110, 0);
+        }
+        risp2.transform.parent = risposte.transform;
+        risp2.name = risp2.name.Replace("(Clone)", "");
+
 
         r1 = risposte.transform.Find("R1").transform.Find("textR1").GetComponent<TextMeshPro>();
         r2 = risposte.transform.Find("R2").transform.Find("textR2").GetComponent<TextMeshPro>();

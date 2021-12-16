@@ -74,6 +74,8 @@ public class Tutorial_Collision : MonoBehaviour
     public string WrongText = " ";
     public string TryAgain = "";
     public string currentText = "";
+    public GameObject risposta1;
+    public GameObject risposta2;
 
     void Awake()
     {
@@ -90,10 +92,19 @@ public class Tutorial_Collision : MonoBehaviour
         //BirdAnimator = Bird.GetComponent<Animator>();
 
         int level = PlayerPrefs.GetInt("Level", 0);
-        if (level == 1 || level == 3)
+        if (level == 1 )
         {
             StartCoroutine(ShowText(TryAgain));
             Bird.SetActive(true);
+            risposta1.transform.position = new Vector3(41f, 0.48f, -20f);
+            risposta1.transform.rotation = Quaternion.Euler(0, 90, 0);
+        }
+
+        if (level == 3)
+        {
+            StartCoroutine(ShowText(TryAgain));
+            Bird.SetActive(true);
+            risposta2.transform.position = new Vector3(41f, 0.48f, -18.25f);
         }
 
         if (level > 1)

@@ -20,50 +20,50 @@
       "DebugActionIndex": 0
     },
     {
-      "Annotation": "Il2Cpp /Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat",
-      "Action": "\"/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/Tools/MapFileParser/MapFileParser\" --directory=\"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
+      "Annotation": "Il2Cpp /Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat",
+      "Action": "\"/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/Tools/MapFileParser/MapFileParser\" --directory=\"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
       "Inputs": [
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Mono.Security.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.Configuration.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.Core.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.Xml.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.VRModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.dll",
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/mscorlib.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Mono.Security.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.Configuration.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.Core.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.Xml.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/System.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.VRModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/UnityEngine.dll",
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Temp/StagingArea/Data/Managed/mscorlib.dll",
         "\"/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\""
       ],
       "Outputs": [
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat"
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -76,13 +76,13 @@
       "DebugActionIndex": 1
     },
     {
-      "Annotation": "Copy Additional C++ File /Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
-      "Action": "TMPFILE=$(mktemp \"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp\" ",
+      "Annotation": "Copy Additional C++ File /Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
+      "Action": "TMPFILE=$(mktemp \"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp\" ",
       "Inputs": [
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
       ],
       "Outputs": [
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -99,13 +99,13 @@
       "DebugActionIndex": 2
     },
     {
-      "Annotation": "Copy Additional C++ File /Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
-      "Action": "TMPFILE=$(mktemp \"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp\" ",
+      "Annotation": "Copy Additional C++ File /Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
+      "Action": "TMPFILE=$(mktemp \"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp\" ",
       "Inputs": [
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
       ],
       "Outputs": [
-        "/Users/pierpaolomolino/Desktop/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
+        "/Users/pierpaolomolino/Downloads/Unity/e-HealthGame/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,

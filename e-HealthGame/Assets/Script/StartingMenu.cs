@@ -14,6 +14,8 @@ public class StartingMenu : MonoBehaviour
     public GameObject tree;
     public GameObject transition;
     public GameObject endtransition;
+    public GameObject privacy;
+
     AsyncOperation async;
     AsyncOperation asyncTutorial;
     //int caricato = 0;
@@ -33,6 +35,10 @@ public class StartingMenu : MonoBehaviour
 
     public void Start()
     {
+        if (PlayerPrefs.GetInt("PrivacyPolicy", 0) == 0)
+        {
+            privacy.SetActive(true);
+        }
 
         if (ButtonsTutorial.checktrans == false || buttons.checktrans2 == false)
         {

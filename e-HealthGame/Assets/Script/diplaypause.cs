@@ -9,7 +9,7 @@ public class diplaypause : MonoBehaviour
 
     private void Start()
     {
-        menuPauseText.text = "Stai giocando la lettera " + PlayerPrefs.GetString("LetteraLivello") +"\n" + " in modalità " + PlayerPrefs.GetString("difficolta");
+        menuPauseText.text = "Stai giocando la lettera " + PlayerPrefs.GetString("LetteraLivello","C") +"\n" + " in modalità " + PlayerPrefs.GetString("difficolta","Easy");
     }
 
 }
