@@ -21,8 +21,11 @@ public class dissolve : MonoBehaviour
 
     public void Start()
     {
-        risposta1 = risposte.transform.Find("R1").transform.Find("Risposta").gameObject;
-        risposta2 = risposte.transform.Find("R2").transform.Find("Risposta").gameObject;
+        /*risposta1 = risposte.transform.Find("R1").transform.Find("Risposta").gameObject;
+        risposta2 = risposte.transform.Find("R2").transform.Find("Risposta").gameObject;*/
+
+        risposta1 = risposte.transform.Find("R1").gameObject;
+        risposta2 = risposte.transform.Find("R2").gameObject;
     }
 
     public void FixedUpdate()

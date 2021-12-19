@@ -238,7 +238,7 @@ public class detectCollision : MonoBehaviour
 
     IEnumerator WaitCamera()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         AtomBall.GetComponent<Rigidbody>().useGravity = true;
 
     }

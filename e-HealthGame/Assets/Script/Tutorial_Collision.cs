@@ -154,6 +154,11 @@ public class Tutorial_Collision : MonoBehaviour
         savePosCollision = collision.transform.position;
         if ((collision.transform.name == "Plane" || collision.transform.name == "DOMANDA") && tocco == 0) //serve per il primo tocco della pallina sul piano 
         {
+            if (collision.transform.name == "DOMANDA")
+            {
+                collision.collider.enabled = false;
+                //Debug.Log("TOLTO");
+            }
             pause.SetActive(true);
             int level = PlayerPrefs.GetInt("Level", 0);
             if (level == 0) {

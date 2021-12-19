@@ -18,19 +18,13 @@ public class StartingMenu : MonoBehaviour
 
     AsyncOperation async;
     AsyncOperation asyncTutorial;
+
+    public GameObject camera_;
     //int caricato = 0;
 
     public void Awake()
     {
-        if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
-        {
-            Debug.Log("First Time Opening");
-
-            //Set first time opening to false
-            PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
-            SceneManager.LoadSceneAsync("Tutorial");
-
-        }
+        
     }
 
     public void Start()
@@ -61,16 +55,19 @@ public class StartingMenu : MonoBehaviour
     public void levelC()
     {
         PlayerPrefs.SetString("LetteraLivello", "C");
+
     }
 
     public void levelG()
     {
         PlayerPrefs.SetString("LetteraLivello", "G");
+
     }
 
     public void levelSC()
     {
         PlayerPrefs.SetString("LetteraLivello", "SC");
+
 
     }
 
@@ -107,17 +104,27 @@ public class StartingMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        PlayerPrefs.SetInt("scoreLevel", 0);
-        PlayerPrefs.SetInt("Level", 0);
-        //Destroy(bird.gameObject);
-        //StopCoroutine(bird.GetComponent<SpeakBird>().ShowText());
-        bird.SetActive(false);
-        tree.SetActive(false);    
-        //async.allowSceneActivation = true;
-        async = SceneManager.LoadSceneAsync("SampleScene");
-        async.allowSceneActivation = false;
-        StartCoroutine(loadGame());
 
+        if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
+        {
+            Debug.Log("First Time Opening");
+            PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
+            SceneManager.LoadSceneAsync("Tutorial");
+
+        }
+        else
+        {
+            PlayerPrefs.SetInt("scoreLevel", 0);
+            PlayerPrefs.SetInt("Level", 0);
+            //Destroy(bird.gameObject);
+            //StopCoroutine(bird.GetComponent<SpeakBird>().ShowText());
+            bird.SetActive(false);
+            tree.SetActive(false);
+            //async.allowSceneActivation = true;
+            async = SceneManager.LoadSceneAsync("SampleScene");
+            async.allowSceneActivation = false;
+            StartCoroutine(loadGame());
+        }
     }
 
     public void RestartTutorial()

@@ -47,6 +47,7 @@ public class setQuestion : MonoBehaviour
         if (PlayerPrefs.GetInt("Level", 0)== 0)
         {
             transition.SetActive(true);
+            caricaDomande();
         }
        
         //Debug.Log(PlayerPrefs.GetString("LetteraLivello"));
