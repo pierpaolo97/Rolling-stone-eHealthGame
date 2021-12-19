@@ -5,6 +5,7 @@ using UnityEngine;
 public class BackgroundSound : MonoBehaviour
 {
     private static BackgroundSound instance = null;
+    public AudioSource audioback;
     private static BackgroundSound Instance
     {
         get{return instance; }
@@ -22,6 +23,8 @@ public class BackgroundSound : MonoBehaviour
         {
             instance = this;
         }
+        audioback.volume = PlayerPrefs.GetFloat("musicvolume", 0.25f);
         DontDestroyOnLoad(this.gameObject);
+        Debug.Log(PlayerPrefs.GetFloat("musicvolume"));
     }
 }

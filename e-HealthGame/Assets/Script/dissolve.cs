@@ -154,7 +154,7 @@ public class dissolve : MonoBehaviour
                             if (go.name == "Plane_sabbia")
                             {
                                 mat.shader = shaderDissolve;
-                                Debug.Log("caoooooooooooooooooo");
+                                //Debug.Log("caoooooooooooooooooo");
                                 mat.SetColor("_Albedo", new Color(0.6415094f, 0.5206518f, 0.3056248f));
                             }
                         }
