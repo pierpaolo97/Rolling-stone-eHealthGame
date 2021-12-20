@@ -546,7 +546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: HARD
+  m_Text: DIFFICILE
 --- !u!222 &132002334
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3035,7 +3035,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: MEDIUM
+  m_Text: MEDIO
 --- !u!222 &681049664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7823,6 +7823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1508020888}
+  audioBackgroud: {fileID: 0}
 --- !u!114 &1508020888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9235,7 +9236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: EASY
+  m_Text: FACILE
 --- !u!222 &1793997101
 CanvasRenderer:
   m_ObjectHideFlags: 0
