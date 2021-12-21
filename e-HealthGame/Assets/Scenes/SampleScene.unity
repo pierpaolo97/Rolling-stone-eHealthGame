@@ -4731,7 +4731,7 @@ MonoBehaviour:
     risposte:
     - DURO
     - DOLCE
-    rispostaGiusta: DOLCE
+    rispostaGiusta: DURO
     audioWord: {fileID: 8300000, guid: fc64464c2720379498e1672278255643, type: 3}
   - texture: {fileID: 2800000, guid: 07babc1f0ef4d4447bd96f59de960d14, type: 3}
     word: CORDA

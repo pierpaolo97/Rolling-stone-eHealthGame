@@ -18,6 +18,7 @@ public class StartingMenu : MonoBehaviour
 
     AsyncOperation async;
     AsyncOperation asyncTutorial;
+    AsyncOperation asyncfirst;
 
     public GameObject camera_;
     //int caricato = 0;
@@ -67,8 +68,6 @@ public class StartingMenu : MonoBehaviour
     public void levelSC()
     {
         PlayerPrefs.SetString("LetteraLivello", "SC");
-
-
     }
 
     public void easy()
@@ -109,7 +108,10 @@ public class StartingMenu : MonoBehaviour
         {
             Debug.Log("First Time Opening");
             PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
-            SceneManager.LoadSceneAsync("Tutorial");
+            asyncfirst = SceneManager.LoadSceneAsync("Tutorial");
+            asyncfirst.allowSceneActivation = false;
+            StartCoroutine(loadFirstTutorial());
+
 
         }
         else
@@ -168,4 +170,13 @@ public class StartingMenu : MonoBehaviour
         //SceneManager.LoadScene("Tutorial");
     }
 
+    IEnumerator loadFirstTutorial()
+    {
+        //bird.SetActive(false);
+        //tree.SetActive(false);
+        transition.SetActive(true);
+        yield return new WaitForSeconds(1.4f);
+        asyncfirst.allowSceneActivation = true;
+        //SceneManager.LoadScene("Tutorial");
+    }
 }
